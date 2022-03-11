@@ -1,0 +1,3323 @@
+Fri, Feb 04 2022 01:01AM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 16 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 3/3 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 30/30 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying 3, 2, 1... game on!
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 3, 2, 1... game on!
+       >> Trying News at a glance
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed News at a glance
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying Rock your solo
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Rock your solo
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Browser bonus quiz
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 4/4 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed Browser bonus quiz
+       >> Trying Microsoft quiz
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 5/5 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed Microsoft quiz
+       >> Trying Rewards challenge
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 3/3 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed Rewards challenge
+       >> Trying Set a goal
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Set a goal
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete Bonus quiz
+       >> Trying Rewards coffee break quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete Rewards coffee break quiz
+       >> Trying Doubleshot quiz
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 3/3 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed Doubleshot quiz
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete Bonus quiz
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 30 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+           << Account is 'LEVEL 1' - mobile searches not yet available.
+    < Failed to complete Mobile search
+
+> Starting punch card
+       >> Punch card "New Year, new you" is not complete yet.
+       >> Starting activity "Resolutions, but not only!"
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+              >>> Latest punch card activity NOT successfully completed. Possibly not enough time has elapsed since last punch.
+       >> Overall punch card progress: 0 of 4 completed
+    < Failed to complete punch card
+
+> Summary
+       >> Points earned: 288
+       >> Streak count: 1
+           << 2 days until bonus gift
+       >> Available points: 981
+       >> Lifetime points: 981
+
+Fri, Feb 04 2022 01:24AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 124, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 28, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1326, in complete_search_type
+    self.complete_remaining_searches(search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1314, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1272, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, print_stats, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1225, in __complete_action
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 163, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 135, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Fri, Feb 04 2022 08:12AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 124, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 28, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1326, in complete_search_type
+    self.complete_remaining_searches(search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1314, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1272, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, print_stats, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1225, in __complete_action
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 163, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 135, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Fri, Feb 04 2022 08:14AM
+> Starting Offers
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 96 in Microsoft Authenticator
+           << Successfully logged in
+       >> Trying 3, 2, 1... game on!
+           << Already completed, or no points offered
+       >> Trying News at a glance
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Rock your solo
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Browser bonus quiz
+           << Already completed, or no points offered
+       >> Trying Microsoft quiz
+           << Already completed, or no points offered
+       >> Trying Rewards challenge
+           << Already completed, or no points offered
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 46 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+           << Account is 'LEVEL 1' - mobile searches not yet available.
+    < Failed to complete Mobile search
+
+> Starting punch card
+       >> Punch card "New Year, new you" is not complete yet.
+       >> Starting activity "Resolutions, but not only!"
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+              >>> Latest punch card activity NOT successfully completed. Possibly not enough time has elapsed since last punch.
+       >> Overall punch card progress: 0 of 4 completed
+    < Failed to complete punch card
+
+> Summary
+       >> Points earned: 288
+       >> Streak count: 1
+           << 2 days until bonus gift
+       >> Available points: 981
+       >> Lifetime points: 981
+
+Fri, Feb 04 2022 12:03PM
+> Starting Offers
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 54 in Microsoft Authenticator
+           << Successfully logged in
+       >> Trying 3, 2, 1... game on!
+           << Already completed, or no points offered
+       >> Trying News at a glance
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Rock your solo
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Browser bonus quiz
+           << Already completed, or no points offered
+       >> Trying Microsoft quiz
+           << Already completed, or no points offered
+       >> Trying Rewards challenge
+           << Already completed, or no points offered
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 70 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+           << Account is 'LEVEL 1' - mobile searches not yet available.
+    < Failed to complete Mobile search
+
+> Starting punch card
+       >> Punch card "New Year, new you" is not complete yet.
+       >> Starting activity "Resolutions, but not only!"
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+              >>> Latest punch card activity NOT successfully completed. Possibly not enough time has elapsed since last punch.
+       >> Overall punch card progress: 0 of 4 completed
+    < Failed to complete punch card
+
+> Summary
+       >> Points earned: 288
+       >> Streak count: 1
+           << 2 days until bonus gift
+       >> Available points: 981
+       >> Lifetime points: 981
+
+Sat, Feb 05 2022 08:10PM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 24 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 3/3 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 30/30 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Nutritional value meter
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Nutritional value meter
+       >> Trying Calling all nature lovers
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed Calling all nature lovers
+       >> Trying The Orwellian world
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete The Orwellian world
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 28 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+           << Account is 'LEVEL 1' - mobile searches not yet available.
+    < Failed to complete Mobile search
+
+> Starting punch card
+       >> Punch card "New Year, new you" is not complete yet.
+       >> Starting activity "Resolutions, but not only!"
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+              >>> Latest punch card activity NOT successfully completed. Possibly not enough time has elapsed since last punch.
+       >> Overall punch card progress: 0 of 4 completed
+    < Failed to complete punch card
+
+> Summary
+       >> Points earned: 158
+       >> Streak count: 2
+           << 1 day until bonus gift
+       >> Available points: 1,044
+       >> Lifetime points: 1,044
+
+Sun, Feb 06 2022 04:42PM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 52 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 3/3 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 30/30 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Love is in the air
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Love is in the air
+       >> Trying For the love of sleep
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed For the love of sleep
+       >> Trying Tropical paradise
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Tropical paradise
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 42 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+           << Account is 'LEVEL 1' - mobile searches not yet available.
+    < Failed to complete Mobile search
+
+> Starting punch card
+       >> Punch card "New Year, new you" is not complete yet.
+       >> Starting activity "Resolutions, but not only!"
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+              >>> Latest punch card activity NOT successfully completed. Possibly not enough time has elapsed since last punch.
+       >> Overall punch card progress: 0 of 4 completed
+    < Failed to complete punch card
+
+> Summary
+       >> Points earned: 158
+       >> Streak count: 3
+       >> 3 days streak bonus gift earned!
+       >> Available points: 1,152
+       >> Lifetime points: 1,152
+
+Mon, Feb 07 2022 08:20AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 124, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 28, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1334, in complete_search_type
+    self.complete_remaining_searches(search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1322, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1280, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, print_stats, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1233, in __complete_action
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 163, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 135, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Mon, Feb 07 2022 09:39AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 124, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 28, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1334, in complete_search_type
+    self.complete_remaining_searches(search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1322, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1280, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, print_stats, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1233, in __complete_action
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 163, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 135, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Mon, Feb 07 2022 09:46AM
+> Starting Offers
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 18 in Microsoft Authenticator
+           << Successfully logged in
+       >> Trying Best of the best
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Put yourself in the spotlight
+           << Already completed, or no points offered
+       >> Trying Kitchen prep techniques
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 36 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "New Year, new you" is not complete yet.
+       >> Starting activity "Resolutions, but not only!"
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [###########################   ] 9/10 (90%)
+              >>> Time out Exception
+              >>> Latest punch card activity successfully completed!
+       >> Overall punch card progress: 1 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 377
+       >> Streak count: 4
+           << 4 days until bonus gift
+       >> Available points: 1,496
+       >> Lifetime points: 1,496
+
+Tue, Feb 08 2022 05:01PM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 20 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Uncharted territory
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Uncharted territory
+       >> Trying Rewards coffee break quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete Rewards coffee break quiz
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying On the banks
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed On the banks
+       >> Trying Calculating something?
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Calculating something?
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 12 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+              >>> No valid punch cards offered
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 277
+       >> Streak count: 5
+           << 3 days until bonus gift
+       >> Available points: 1,728
+       >> Lifetime points: 1,728
+
+Wed, Feb 09 2022 09:29AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 124, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 28, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1334, in complete_search_type
+    self.complete_remaining_searches(search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1322, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1280, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, print_stats, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1233, in __complete_action
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 163, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 135, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Wed, Feb 09 2022 09:38AM
+> Starting Offers
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 98 in Microsoft Authenticator
+           << Successfully logged in
+       >> Trying Be a whisk taker
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Celebrate the music
+           << Already completed, or no points offered
+       >> Trying For all globetrotters
+           << Already completed, or no points offered
+       >> Trying Esports action
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 40 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is not complete yet.
+       >> Starting activity "Music to your ears"
+              >>> Latest punch card activity successfully completed!
+       >> Overall punch card progress: 1 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 377
+       >> Streak count: 6
+           << 2 days until bonus gift
+       >> Available points: 2,060
+       >> Lifetime points: 2,060
+
+Thu, Feb 10 2022 09:15PM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 84 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying World Pulses day
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete World Pulses day
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete Bonus quiz
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying Celebrate the music
+           << Already completed, or no points offered
+       >> Trying Healthiest of all
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [#################             ] 4/7 (57%)
+                  <<< Failed to complete quiz2
+           << Failed to complete Healthiest of all
+       >> Trying Garden galore
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Garden galore
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 72 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is not complete yet.
+       >> Starting activity "One for each day of the week"
+              >>> Latest punch card activity successfully completed!
+       >> Overall punch card progress: 2 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 378
+       >> Streak count: 7
+           << 1 day until bonus gift
+       >> Available points: 2,293
+       >> Lifetime points: 2,293
+
+Fri, Feb 11 2022 09:28AM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 60 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Happy Birthday Jen!
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Happy Birthday Jen!
+       >> Trying In the news
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed In the news
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying Celebrate the music
+           << Already completed, or no points offered
+       >> Trying Keeping fit
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Keeping fit
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 88 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is not complete yet.
+       >> Starting activity "Hello?"
+              >>> Latest punch card activity successfully completed!
+       >> Overall punch card progress: 3 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 399
+       >> Streak count: 8
+       >> 5 days streak bonus gift earned!
+       >> Available points: 2,571
+       >> Lifetime points: 2,571
+
+Sat, Feb 12 2022 02:56PM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 28, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1334, in complete_search_type
+    self.complete_remaining_searches(search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1314, in complete_remaining_searches
+    driver = self.__complete_edge_search(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1260, in __complete_edge_search
+    driver, completion = self.__complete_action(action, description, driver, print_stats, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1233, in __complete_action
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 163, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 98, in __check_login_url
+    WebDriverWait(driver, 2).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00967AC3+2587331]
+	Ordinal0 [0x008FADD1+2141649]
+	Ordinal0 [0x007F3BB8+1063864]
+	Ordinal0 [0x008201CE+1245646]
+	Ordinal0 [0x008203CB+1246155]
+	Ordinal0 [0x0084A612+1418770]
+	Ordinal0 [0x008386D4+1345236]
+	Ordinal0 [0x00848A0A+1411594]
+	Ordinal0 [0x008384A6+1344678]
+	Ordinal0 [0x008153F6+1201142]
+	Ordinal0 [0x008162E6+1204966]
+	GetHandleVerifier [0x00B0DF22+1680738]
+	GetHandleVerifier [0x00BC0DBC+2413564]
+	GetHandleVerifier [0x009FD151+563089]
+	GetHandleVerifier [0x009FBF13+558419]
+	Ordinal0 [0x0090081E+2164766]
+	Ordinal0 [0x00905508+2184456]
+	Ordinal0 [0x00905650+2184784]
+	Ordinal0 [0x0090F5BC+2225596]
+	BaseThreadInitThunk [0x75EB6739+25]
+	RtlGetFullPathName_UEx [0x76F18E7F+1215]
+	RtlGetFullPathName_UEx [0x76F18E4D+1165]
+
+
+Sun, Feb 13 2022 03:23PM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 22 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying World Radio Day
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete World Radio Day
+       >> Trying Discover your continent
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Discover your continent
+       >> Trying Sun loving succulents
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Sun loving succulents
+       >> Trying Celebrate the music
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 88 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 440
+       >> Streak count: 10
+           << 3 days until bonus gift
+       >> Available points: 3,006
+       >> Lifetime points: 3,006
+
+Mon, Feb 14 2022 11:39AM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 98 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Back of the net
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Back of the net
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete Bonus quiz
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying Celebrate the music
+           << Already completed, or no points offered
+       >> Trying Know your ancestors
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 6/6 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed Know your ancestors
+       >> Trying Weather guide
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Weather guide
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 74 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 430
+       >> Streak count: 11
+           << 2 days until bonus gift
+       >> Available points: 3,238
+       >> Lifetime points: 3,238
+
+Tue, Feb 15 2022 02:01PM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 66 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Land of picturesque lakes
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Land of picturesque lakes
+       >> Trying Rewards coffee break quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete Rewards coffee break quiz
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying Celebrate the music
+           << Already completed, or no points offered
+       >> Trying Ecological balance
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed Ecological balance
+       >> Trying Boost your immune system
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Boost your immune system
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 42 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 430
+       >> Streak count: 12
+           << 1 day until bonus gift
+       >> Available points: 3,470
+       >> Lifetime points: 3,470
+
+Wed, Feb 16 2022 09:57AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 124, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 80, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 28, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1342, in complete_search_type
+    self.complete_remaining_searches(search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1330, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1288, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, print_stats, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1241, in __complete_action
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 163, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 135, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Fri, Feb 18 2022 07:57AM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 86 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Majestic falls
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Majestic falls
+       >> Trying News at a glance
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed News at a glance
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying Celebrate the music
+           << Already completed, or no points offered
+       >> Trying Master of the game
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Master of the game
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 42 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 450
+       >> Streak count: 15
+           << 5 days until bonus gift
+       >> Available points: 4,211
+       >> Lifetime points: 4,211
+
+Sat, Feb 19 2022 05:04PM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 86 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying New movie alert
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete New movie alert
+       >> Trying For all bibliophiles
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed For all bibliophiles
+       >> Trying Cut down on food waste
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Cut down on food waste
+       >> Trying Pin to Windows
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Pin to Windows
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 24 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 440
+       >> Streak count: 16
+           << 4 days until bonus gift
+       >> Available points: 4,433
+       >> Lifetime points: 4,433
+
+Sat, Feb 19 2022 05:58PM
+> Starting Offers
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 26 in Microsoft Authenticator
+           << Successfully logged in
+       >> Trying New movie alert
+           << Already completed, or no points offered
+       >> Trying For all bibliophiles
+           << Already completed, or no points offered
+       >> Trying Cut down on food waste
+           << Already completed, or no points offered
+       >> Trying Pin to Windows
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Summary
+       >> Points earned: 470
+       >> Streak count: 16
+           << 4 days until bonus gift
+       >> Available points: 4,433
+       >> Lifetime points: 4,433
+
+Sun, Feb 20 2022 06:02PM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 28 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Dont stop the music
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Dont stop the music
+       >> Trying White sand beaches
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed White sand beaches
+       >> Trying Rare finds
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Rare finds
+       >> Trying Pin to Windows
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 96 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 440
+       >> Streak count: 17
+           << 3 days until bonus gift
+       >> Available points: 4,625
+       >> Lifetime points: 4,625
+
+Mon, Feb 21 2022 08:33PM
+> Starting Edge search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 24 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Hallo Vienna!
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Hallo Vienna!
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete Bonus quiz
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying Mindful Monday
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed Mindful Monday
+       >> Trying Unit converter
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Unit converter
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 64 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 430
+       >> Streak count: 18
+           << 2 days until bonus gift
+       >> Available points: 4,857
+       >> Lifetime points: 4,857
+
+Tue, Feb 22 2022 06:12PM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 124, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 80, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 28, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1342, in complete_search_type
+    self.complete_remaining_searches(search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1330, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1288, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, print_stats, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1241, in __complete_action
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 163, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 135, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Tue, Feb 22 2022 06:25PM
+> Starting Offers
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 92 in Microsoft Authenticator
+           << Successfully logged in
+       >> Trying Explore Machu Picchu
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Brighten up your space
+           << Already completed, or no points offered
+       >> Trying Go the minimal way!
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Two years ago this month
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 32 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned: 435
+       >> Streak count: 19
+           << 1 day until bonus gift
+       >> Available points: 5,094
+       >> Lifetime points: 5,094
+
+Thu, Feb 24 2022 03:00PM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 12 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Superhero soire
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Superhero soire
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete Bonus quiz
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying Dribble mania
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed Dribble mania
+       >> Trying The fish in the zodiac
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete The fish in the zodiac
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Whack-a-Piata is here
+           << Already completed, or no points offered
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 76 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 232
+       >> Microsoft 'Points earned' today: 430
+       >> Streak count: 21
+           << 6 days until bonus gift
+       >> Available points: 5,663
+       >> Lifetime points: 5,663
+
+Fri, Feb 25 2022 02:28PM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 122, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_search_type
+    driver = self.complete_remaining_searches(driver, search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1342, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1300, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1255, in __complete_action
+    driver = self.__get_driver(device_type)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1227, in __get_driver
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 161, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 133, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Fri, Feb 25 2022 02:38PM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 18 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Offers
+       >> Trying The Argentinian capital
+           << Already completed, or no points offered
+       >> Trying News check
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Best cleaning tips
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Whack-a-Piata is here
+           << Already completed, or no points offered
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 42 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 60
+       >> Microsoft 'Points earned' today: 450
+       >> Streak count: 22
+           << 5 days until bonus gift
+       >> Available points: 5,865
+       >> Lifetime points: 5,865
+
+Sat, Feb 26 2022 12:32PM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 122, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_search_type
+    driver = self.complete_remaining_searches(driver, search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1342, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1300, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1255, in __complete_action
+    driver = self.__get_driver(device_type)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1227, in __get_driver
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 161, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 133, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Sat, Feb 26 2022 12:40PM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 122, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1349, in complete_search_type
+    init_points, driver = self.__get_available_points(driver=None, device_type=self.driver.WEB_DEVICE)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1238, in __get_available_points
+    driver = self.__get_driver(device_type)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1227, in __get_driver
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 161, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 133, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Sat, Feb 26 2022 12:41PM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 84 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Offers
+       >> Trying Breathe in, breathe out
+           << Already completed, or no points offered
+       >> Trying Explore the artistic you
+           << Already completed, or no points offered
+       >> Trying Want to learn French?
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Whack-a-Piata is here
+           << Already completed, or no points offered
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 60 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 60
+       >> Microsoft 'Points earned' today: 440
+       >> Streak count: 23
+           << 4 days until bonus gift
+       >> Available points: 6,057
+       >> Lifetime points: 6,057
+
+Sun, Feb 27 2022 04:09PM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 26 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Running out of ideas to cook?
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Running out of ideas to cook?
+       >> Trying Greatest of them all
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed Greatest of them all
+       >> Trying Weather forecast
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Weather forecast
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Whack-a-Piata is here
+           << Already completed, or no points offered
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 58 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 192
+       >> Microsoft 'Points earned' today: 440
+       >> Streak count: 24
+           << 3 days until bonus gift
+       >> Available points: 6,249
+       >> Lifetime points: 6,249
+
+Mon, Feb 28 2022 01:02PM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 14 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Hockey schedule
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Hockey schedule
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete Bonus quiz
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying Bend it right!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Bend it right!
+       >> Trying Virtual dating and more
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Virtual dating and more
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Whack-a-Piata is here
+           << Already completed, or no points offered
+       >> Trying You did it!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete You did it!
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 54 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Celebrate the music!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 232
+       >> Microsoft 'Points earned' today: 430
+       >> Streak count: 25
+           << 2 days until bonus gift
+       >> Available points: 6,481
+       >> Lifetime points: 6,481
+
+Wed, Mar 02 2022 10:43AM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 88 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Dr. Seuss' Day!
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Dr. Seuss' Day!
+       >> Trying Doubleshot quiz
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 3/3 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed Doubleshot quiz
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed Daily poll
+       >> Trying Women's History Month
+           << Already completed, or no points offered
+       >> Trying Their fists can hurt
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed Their fists can hurt
+       >> Trying Time for some spring cleaning
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Time for some spring cleaning
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 26 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Women's History Month" is not complete yet.
+       >> Starting activity "Learn more about these women of science who are admired around the world"
+              >>> Latest punch card activity successfully completed!
+       >> Overall punch card progress: 2 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 338
+       >> Microsoft 'Points earned' today: 378
+       >> Streak count: 27
+       >> 7 days streak bonus gift earned!
+       >> Available points: 7,151
+       >> Lifetime points: 7,151
+
+Thu, Mar 03 2022 12:59PM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 122, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_search_type
+    driver = self.complete_remaining_searches(driver, search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1342, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1300, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1255, in __complete_action
+    driver = self.__get_driver(device_type)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1227, in __get_driver
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 161, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 133, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Thu, Mar 03 2022 01:08PM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 58 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Offers
+       >> Trying Patagonian animals
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Women's History Month
+           << Already completed, or no points offered
+       >> Trying This is a 3-point shot...
+           << Already completed, or no points offered
+       >> Trying Must-have kitchen tools
+           << Already completed, or no points offered
+       >> Trying Minecraft behind the scenes
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 10 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Women's History Month" is not complete yet.
+       >> Starting activity "Women in charge"
+              >>> Latest punch card activity successfully completed!
+       >> Overall punch card progress: 3 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 61
+       >> Microsoft 'Points earned' today: 384
+       >> Streak count: 28
+           << 6 days until bonus gift
+       >> Available points: 7,389
+       >> Lifetime points: 7,389
+
+Fri, Mar 04 2022 10:04AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_search_type
+    driver = self.complete_remaining_searches(driver, search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1338, in complete_remaining_searches
+    self.__complete_offers(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1310, in __complete_offers
+    driver, completion = self.__complete_action(action, description, driver, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1256, in __complete_action
+    completion = action(driver, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1096, in __offers
+    self.__perform_action_on_offers(self.__click_offer, driver, more_activities_xpath, [], offer_count=remaining_offer_count)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1075, in __perform_action_on_offers
+    c = action(driver, offer)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1018, in __click_offer
+    completed = self.__quiz2(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 856, in __quiz2
+    )].click()
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 249, in click
+    self._dispatch("click", (self._webelement, self._driver), "click", ())
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 331, in _dispatch
+    raise e
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 328, in _dispatch
+    result = getattr(self._webelement, d_call)(*d_args)
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 81, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 710, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: headless chrome=98.0.4758.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00687AC3+2587331]
+	Ordinal0 [0x0061ADD1+2141649]
+	Ordinal0 [0x00513A80+1063552]
+	Ordinal0 [0x005410DE+1249502]
+	Ordinal0 [0x00536DD3+1207763]
+	Ordinal0 [0x0055868C+1345164]
+	Ordinal0 [0x005367A4+1206180]
+	Ordinal0 [0x005587E4+1345508]
+	Ordinal0 [0x00568A0A+1411594]
+	Ordinal0 [0x005584A6+1344678]
+	Ordinal0 [0x005353F6+1201142]
+	Ordinal0 [0x005362E6+1204966]
+	GetHandleVerifier [0x0082DF22+1680738]
+	GetHandleVerifier [0x008E0DBC+2413564]
+	GetHandleVerifier [0x0071D151+563089]
+	GetHandleVerifier [0x0071BF13+558419]
+	Ordinal0 [0x0062081E+2164766]
+	Ordinal0 [0x00625508+2184456]
+	Ordinal0 [0x00625650+2184784]
+	Ordinal0 [0x0062F5BC+2225596]
+	BaseThreadInitThunk [0x76D26739+25]
+	RtlGetFullPathName_UEx [0x77C68E7F+1215]
+	RtlGetFullPathName_UEx [0x77C68E4D+1165]
+
+
+Fri, Mar 04 2022 10:25AM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 38 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Offers
+       >> Trying Happy Birthday Catherine
+           << Already completed, or no points offered
+       >> Trying Hold and release!
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Women's History Month
+           << Already completed, or no points offered
+       >> Trying New day, new word
+           << Already completed, or no points offered
+       >> Trying Minecraft behind the scenes
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 32 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Women's History Month" is not complete yet.
+       >> Starting activity "Give with Bing"
+              >>> Latest punch card activity successfully completed!
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 111
+       >> Microsoft 'Points earned' today: 455
+       >> Streak count: 29
+           << 5 days until bonus gift
+       >> Available points: 7,642
+       >> Lifetime points: 7,642
+
+Sun, Mar 06 2022 12:51PM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_search_type
+    driver = self.complete_remaining_searches(driver, search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1338, in complete_remaining_searches
+    self.__complete_offers(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1310, in __complete_offers
+    driver, completion = self.__complete_action(action, description, driver, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1256, in __complete_action
+    completion = action(driver, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1089, in __offers
+    self.__perform_action_on_offers(self.__click_offer, driver, daily_sets_xpath, [], offer_count=3)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1075, in __perform_action_on_offers
+    c = action(driver, offer)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1018, in __click_offer
+    completed = self.__quiz2(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 863, in __quiz2
+    WebDriverWait(driver, self.__WEB_DRIVER_WAIT_SHORT).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+Sun, Mar 06 2022 12:57PM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 92 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Offers
+       >> Trying Happy Birthday Toronto!
+           << Already completed, or no points offered
+       >> Trying Superheroes universe
+           << Already completed, or no points offered
+       >> Trying Pick your favourite game
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Pick your favourite game
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 42 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 70
+       >> Microsoft 'Points earned' today: 440
+       >> Streak count: 31
+           << 3 days until bonus gift
+       >> Available points: 8,026
+       >> Lifetime points: 8,026
+
+Mon, Mar 07 2022 09:42AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_search_type
+    driver = self.complete_remaining_searches(driver, search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1338, in complete_remaining_searches
+    self.__complete_offers(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1310, in __complete_offers
+    driver, completion = self.__complete_action(action, description, driver, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1256, in __complete_action
+    completion = action(driver, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1096, in __offers
+    self.__perform_action_on_offers(self.__click_offer, driver, more_activities_xpath, [], offer_count=remaining_offer_count)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1075, in __perform_action_on_offers
+    c = action(driver, offer)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1018, in __click_offer
+    completed = self.__quiz2(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 863, in __quiz2
+    WebDriverWait(driver, self.__WEB_DRIVER_WAIT_SHORT).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+Mon, Mar 07 2022 10:03AM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 32 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Offers
+       >> Trying Bard of Avon
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying May the forest be with you
+           << Already completed, or no points offered
+       >> Trying Fitness 101
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Fitness 101
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Try Whack-a-Piata
+           << Already completed, or no points offered
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 18 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 70
+       >> Microsoft 'Points earned' today: 430
+       >> Streak count: 32
+           << 2 days until bonus gift
+       >> Available points: 8,258
+       >> Lifetime points: 8,258
+
+Tue, Mar 08 2022 02:16PM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_search_type
+    driver = self.complete_remaining_searches(driver, search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1338, in complete_remaining_searches
+    self.__complete_offers(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1310, in __complete_offers
+    driver, completion = self.__complete_action(action, description, driver, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1256, in __complete_action
+    completion = action(driver, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1096, in __offers
+    self.__perform_action_on_offers(self.__click_offer, driver, more_activities_xpath, [], offer_count=remaining_offer_count)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1075, in __perform_action_on_offers
+    c = action(driver, offer)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1018, in __click_offer
+    completed = self.__quiz2(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 863, in __quiz2
+    WebDriverWait(driver, self.__WEB_DRIVER_WAIT_SHORT).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+Tue, Mar 08 2022 02:30PM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 52 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Offers
+       >> Trying Break the bias
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Not just a man's world
+           << Already completed, or no points offered
+       >> Trying In the news
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed In the news
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Try Whack-a-Piata
+           << Already completed, or no points offered
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 46 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 70
+       >> Microsoft 'Points earned' today: 430
+       >> Streak count: 33
+           << 1 day until bonus gift
+       >> Available points: 8,490
+       >> Lifetime points: 8,490
+
+Wed, Mar 09 2022 09:36AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 122, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_search_type
+    driver = self.complete_remaining_searches(driver, search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1342, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1300, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1255, in __complete_action
+    driver = self.__get_driver(device_type)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1227, in __get_driver
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 161, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 133, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Wed, Mar 09 2022 09:47AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 120, in __check_login_url
+    authenticator_code = driver.find_element(By.ID, "idRemoteNGC_DisplaySign").text
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 108, in find_element
+    return self._dispatch("find", (by, value, self._driver), "find_element", (by, value))
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 183, in _dispatch
+    raise e
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 180, in _dispatch
+    result = getattr(self._driver, d_call)(*d_args)
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1244, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="idRemoteNGC_DisplaySign"]"}
+  (Session info: headless chrome=99.0.4844.51)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00897AC3+2587331]
+	Ordinal0 [0x0082ADD1+2141649]
+	Ordinal0 [0x00723BB8+1063864]
+	Ordinal0 [0x007501CE+1245646]
+	Ordinal0 [0x007503CB+1246155]
+	Ordinal0 [0x0077A612+1418770]
+	Ordinal0 [0x007686D4+1345236]
+	Ordinal0 [0x00778A0A+1411594]
+	Ordinal0 [0x007684A6+1344678]
+	Ordinal0 [0x007453F6+1201142]
+	Ordinal0 [0x007462E6+1204966]
+	GetHandleVerifier [0x00A3DF22+1680738]
+	GetHandleVerifier [0x00AF0DBC+2413564]
+	GetHandleVerifier [0x0092D151+563089]
+	GetHandleVerifier [0x0092BF13+558419]
+	Ordinal0 [0x0083081E+2164766]
+	Ordinal0 [0x00835508+2184456]
+	Ordinal0 [0x00835650+2184784]
+	Ordinal0 [0x0083F5BC+2225596]
+	BaseThreadInitThunk [0x768E6739+25]
+	RtlGetFullPathName_UEx [0x777A8E7F+1215]
+	RtlGetFullPathName_UEx [0x777A8E4D+1165]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 128, in __check_login_url
+    driver.find_element(By.ID, "idChkBx_SAOTCAS_TD").click()
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 108, in find_element
+    return self._dispatch("find", (by, value, self._driver), "find_element", (by, value))
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 183, in _dispatch
+    raise e
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 180, in _dispatch
+    result = getattr(self._driver, d_call)(*d_args)
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1244, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="idChkBx_SAOTCAS_TD"]"}
+  (Session info: headless chrome=99.0.4844.51)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00897AC3+2587331]
+	Ordinal0 [0x0082ADD1+2141649]
+	Ordinal0 [0x00723BB8+1063864]
+	Ordinal0 [0x007501CE+1245646]
+	Ordinal0 [0x007503CB+1246155]
+	Ordinal0 [0x0077A612+1418770]
+	Ordinal0 [0x007686D4+1345236]
+	Ordinal0 [0x00778A0A+1411594]
+	Ordinal0 [0x007684A6+1344678]
+	Ordinal0 [0x007453F6+1201142]
+	Ordinal0 [0x007462E6+1204966]
+	GetHandleVerifier [0x00A3DF22+1680738]
+	GetHandleVerifier [0x00AF0DBC+2413564]
+	GetHandleVerifier [0x0092D151+563089]
+	GetHandleVerifier [0x0092BF13+558419]
+	Ordinal0 [0x0083081E+2164766]
+	Ordinal0 [0x00835508+2184456]
+	Ordinal0 [0x00835650+2184784]
+	Ordinal0 [0x0083F5BC+2225596]
+	BaseThreadInitThunk [0x768E6739+25]
+	RtlGetFullPathName_UEx [0x777A8E7F+1215]
+	RtlGetFullPathName_UEx [0x777A8E4D+1165]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1349, in complete_search_type
+    init_points, driver = self.__get_available_points(driver=None, device_type=self.driver.WEB_DEVICE)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1238, in __get_available_points
+    driver = self.__get_driver(device_type)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1227, in __get_driver
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 161, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 131, in __check_login_url
+    raise RuntimeError(f"Unable to handle {url}")
+RuntimeError: Unable to handle https://login.live.com/
+
+Wed, Mar 09 2022 09:48AM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 14 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Offers
+       >> Trying Lettuce celebrate spring
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying NBA fever?
+           << Already completed, or no points offered
+       >> Trying Recycle and refurbish
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Recycle and refurbish
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Try Whack-a-Piata
+           << Already completed, or no points offered
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 36 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 70
+       >> Microsoft 'Points earned' today: 430
+       >> Streak count: 34
+       >> 7 days streak bonus gift earned!
+       >> Available points: 8,827
+       >> Lifetime points: 8,827
+
+Thu, Mar 10 2022 04:04PM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_search_type
+    driver = self.complete_remaining_searches(driver, search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1338, in complete_remaining_searches
+    self.__complete_offers(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1310, in __complete_offers
+    driver, completion = self.__complete_action(action, description, driver, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1256, in __complete_action
+    completion = action(driver, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1096, in __offers
+    self.__perform_action_on_offers(self.__click_offer, driver, more_activities_xpath, [], offer_count=remaining_offer_count)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1075, in __perform_action_on_offers
+    c = action(driver, offer)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1018, in __click_offer
+    completed = self.__quiz2(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 863, in __quiz2
+    WebDriverWait(driver, self.__WEB_DRIVER_WAIT_SHORT).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+Thu, Mar 10 2022 04:16PM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 90 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Offers
+       >> Trying Go Rio!
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Big cats
+           << Already completed, or no points offered
+       >> Trying Quick conversion
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Quick conversion
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Try Whack-a-Piata
+           << Already completed, or no points offered
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 26 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 70
+       >> Microsoft 'Points earned' today: 430
+       >> Streak count: 35
+           << 9 days until bonus gift
+       >> Available points: 9,059
+       >> Lifetime points: 9,059
+
+Fri, Mar 11 2022 09:52AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 122, in __check_login_url
+    WebDriverWait(driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 86, in __main
+    complete_search(rewards, completion, search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 38, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_search_type
+    driver = self.complete_remaining_searches(driver, search_type, prev_completion)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1342, in complete_remaining_searches
+    driver = self.__complete_mobile_search(driver=None)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1300, in __complete_mobile_search
+    driver, completion = self.__complete_action(action, description, driver, close, device_type, **action_kwargs)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1255, in __complete_action
+    driver = self.__get_driver(device_type)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1227, in __get_driver
+    self.__login(driver)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 161, in __login
+    is_login_complete = self.__check_login_url(driver, driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 133, in __check_login_url
+    raise TimeoutException("You did not select code within Microsoft Authenticator in time.")
+selenium.common.exceptions.TimeoutException: Message: You did not select code within Microsoft Authenticator in time.
+
+
+Fri, Mar 11 2022 10:09AM
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 42 in Microsoft Authenticator
+           << Successfully logged in
+> Starting Offers
+       >> Trying Bean there done that?
+           << Already completed, or no points offered
+       >> Trying The world is on your phone
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Action game series
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete Take the tour
+       >> Trying Try Whack-a-Piata
+           << Already completed, or no points offered
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting Mobile search
+       >> Logging in
+       >> Waiting for user to approve 2FA, please select 66 in Microsoft Authenticator
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 60
+       >> Microsoft 'Points earned' today: 450
+       >> Streak count: 36
+           << 8 days until bonus gift
+       >> Available points: 9,261
+       >> Lifetime points: 9,261
+
