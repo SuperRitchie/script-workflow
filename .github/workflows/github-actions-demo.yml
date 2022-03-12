@@ -18,7 +18,7 @@ jobs:
         run: |
           cd bing-rewards
           cd BingRewards
-          pip install -r BingRewards/requirements.txt
+          pip install -r requirements.txt
           python BingRewards.py
 
       - name: List all NEW files
