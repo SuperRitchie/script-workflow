@@ -18,8 +18,7 @@ jobs:
         run: |
           cd bing-rewards
           cd BingRewards
-          pip install selenium
-          pip3install python-dateutil
+          pip install -r BingRewards/requirements.txt
           python BingRewards.py
 
       - name: List all NEW files
