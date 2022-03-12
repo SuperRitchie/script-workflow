@@ -18,7 +18,7 @@ jobs:
         run: |
           cd bing-rewards
           cd BingRewards
-          py BingRewards.py
+          python BingRewards.py
 
       - name: List all NEW files
         run: ls
