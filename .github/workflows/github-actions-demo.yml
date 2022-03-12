@@ -22,5 +22,4 @@ jobs:
           python BingRewards.py
 
       - name: List all NEW files
-        run: ls
-        run: ls
+        run: cd ~
