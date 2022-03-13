@@ -2,10 +2,10 @@ name: Daily bing-rewards executable
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron: '*/5 * * * *'
+    - cron: '0 20 * * *'
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
 
