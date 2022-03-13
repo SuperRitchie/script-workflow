@@ -1,5 +1,8 @@
-name: GitHub Actions Demo
-on: [push]
+name: Daily bing-rewards executable
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: '6 7 * * *'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -22,4 +25,4 @@ jobs:
           python BingRewards.py
 
       - name: List all NEW files
-        run: cd ~
+        run: ls
