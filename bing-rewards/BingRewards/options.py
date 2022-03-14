@@ -175,7 +175,7 @@ def parse_arguments():
     )
 
     parser.set_defaults(search_type='remaining', headless=True,
-                        cookies=False, telegram=True, driver=ChromeDriver)
+                        cookies=False, telegram=False, driver=ChromeDriver)
 
     args = parser.parse_args()
 
