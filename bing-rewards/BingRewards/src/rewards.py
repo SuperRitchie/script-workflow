@@ -6,7 +6,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
+<<<<<<< HEAD
 from selenium.common.exceptions import TimeoutException, NoSuchElementException, NoAlertPresentException, UnexpectedAlertPresentException, JavascriptException
+=======
+from selenium.common.exceptions import TimeoutException, NoSuchElementException, NoAlertPresentException, UnexpectedAlertPresentException
+>>>>>>> bfc4560bb03ca51f355af432b015877018b35292
 import time
 import sys
 import re
@@ -103,6 +107,7 @@ class Rewards:
 
             #'stay signed in' page
             finally:
+<<<<<<< HEAD
                 try:
                     WebDriverWait(self.driver, 30).until(
                         EC.element_to_be_clickable((By.ID, 'KmsiCheckboxField'))
@@ -110,6 +115,11 @@ class Rewards:
                 except TimeoutException:
                     print('\nIssue logging in, please run in -nhl mode to see the problem\n')
                     raise
+=======
+                WebDriverWait(self.driver, 30).until(
+                    EC.element_to_be_clickable((By.ID, 'KmsiCheckboxField'))
+                ).click()
+>>>>>>> bfc4560bb03ca51f355af432b015877018b35292
                 #yes, stay signed in
                 self.driver.find_element(By.XPATH, '//*[@id="idSIButton9"]').click()
 
@@ -303,6 +313,7 @@ class Rewards:
         return last_request_time
 
     def __search(self, search_type):
+<<<<<<< HEAD
 
         def clean_query(query):
             #chromedriver 98+, special characters fail
@@ -311,6 +322,8 @@ class Rewards:
             query = query.encode('ascii', 'ignore').decode('ascii')
             return query
 
+=======
+>>>>>>> bfc4560bb03ca51f355af432b015877018b35292
         self.__sys_out("Starting search", 2)
         self.driver.get(self.__BING_URL)
 
@@ -363,7 +376,12 @@ class Rewards:
                 if query not in self.search_hist:
                     break
 
+<<<<<<< HEAD
             query = clean_query(query)
+=======
+            #chromedriver 98+, special characters fail
+            query = re.sub(r"[^a-zA-Z0-9\s]", "", query)
+>>>>>>> bfc4560bb03ca51f355af432b015877018b35292
             search_box.send_keys(query, Keys.RETURN)  # unique search term
             self.search_hist.append(query)
             time.sleep(random.uniform(2, 4.5))
@@ -1150,12 +1168,17 @@ class Rewards:
                         self.__sys_out('Reached error page', 3, end=True)
                         return activity_index
 
+<<<<<<< HEAD
                     try:
                         #will only get points if you click the redirect link, can't go to the page directly
                         self.driver.execute_script("document.getElementsByClassName('offer-cta')[0].click()")
                     #most likely target page was not opened, except clause so program can continue to mobile
                     except JavascriptException:
                         return activity_index
+=======
+                    #will only get points if you click the redirect link, can't go to the page directly
+                    self.driver.execute_script("document.getElementsByClassName('offer-cta')[0].click()")
+>>>>>>> bfc4560bb03ca51f355af432b015877018b35292
                     time.sleep(2)
                     self.driver.close()
                     self.driver.switch_to_first_tab()

@@ -1,5 +1,6 @@
 # Changelog
 
+<<<<<<< HEAD
 ## [v1.8](https://github.com/jjjchens235/bing-rewards/tree/v1.8) (2022-03-25)
 
 [Full Changelog](https://github.com/jjjchens235/bing-rewards/compare/v1.7...v1.8)
@@ -20,6 +21,10 @@
 
 ## [v1.7](https://github.com/jjjchens235/bing-rewards/tree/v1.7) (2022-03-19)
 
+=======
+## [v1.7](https://github.com/jjjchens235/bing-rewards/tree/v1.7) (2022-03-19)
+
+>>>>>>> bfc4560bb03ca51f355af432b015877018b35292
 [Full Changelog](https://github.com/jjjchens235/bing-rewards/compare/v1.6...v1.7)
 
 **Implemented enhancements:**

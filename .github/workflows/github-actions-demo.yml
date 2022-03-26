@@ -3,10 +3,33 @@ on:
   push:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron: '0 21 * * *'
+    - cron: '0 19 * * *'
 jobs:
-  Explore-GitHub-Actions:
+  Run-On-Windows:
     runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: List all ORIGINAL files
+        run: ls
+
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Run Python Script
+        run: |
+          cd bing-rewards
+          cd BingRewards
+          pip install -r requirements.txt
+          python BingRewards.py
+
+      - name: List all NEW files
+        run: ls
+
+  Run-On-Ubuntu:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
