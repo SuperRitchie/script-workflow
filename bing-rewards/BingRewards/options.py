@@ -2,7 +2,7 @@ import argparse
 import getpass
 import selenium
 import sys
-from src.driver import ChromeDriver, MsEdgeDriver
+from src.driver import ChromeDriverFactory, MsEdgeDriverFactory
 
 
 class PasswordAction(argparse.Action):
@@ -18,11 +18,8 @@ class PasswordAction(argparse.Action):
 
 class DriverAction(argparse.Action):
     def __call__(self, parser, namespace, value, option_string=None):
-        mapping = {"chrome": ChromeDriver,
-                   "msedge": MsEdgeDriver}
-        if value == "msedge" and int(selenium.__version__.split('.')[0]) < 4:
-            print("Microsoft Edge is only supported on selenium 4 and above\nRun 'pip install -U selenium' to update", file=sys.stderr)
-            sys.exit(-1)
+        mapping = {"chrome": ChromeDriverFactory,
+                   "msedge": MsEdgeDriverFactory}
         setattr(namespace, self.dest, mapping[value])
 
 
@@ -33,7 +30,7 @@ def print_args(args):
         str(key) + '=' + str(value) for key, value in d_args.items()
     )
 
-    print(f'\nCommand line options selected:\n{result}\n')
+    print(f'\nCommand line options selected:\n{result}')
 
 
 def parse_arguments():
@@ -175,7 +172,7 @@ def parse_arguments():
     )
 
     parser.set_defaults(search_type='remaining', headless=True,
-                        cookies=False, telegram=False, driver=ChromeDriver)
+                        cookies=False, telegram=True, driver=ChromeDriverFactory)
 
     args = parser.parse_args()
 

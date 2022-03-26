@@ -1,19 +1,51 @@
 # Changelog
 
-## [Unreleased](https://github.com/jjjchens235/bing-rewards/tree/HEAD)
+## [v1.8](https://github.com/jjjchens235/bing-rewards/tree/v1.8) (2022-03-25)
 
-[Full Changelog](https://github.com/jjjchens235/bing-rewards/compare/v1.6...HEAD)
+[Full Changelog](https://github.com/jjjchens235/bing-rewards/compare/v1.7...v1.8)
+
+**Implemented enhancements:**
+
+- Update log files to .json format to support different accounts [\#188](https://github.com/jjjchens235/bing-rewards/issues/188)
+- Add completion status to the telegram message [\#178](https://github.com/jjjchens235/bing-rewards/issues/178)
+- Rework remaining mode completion tracking & Log file generation [\#166](https://github.com/jjjchens235/bing-rewards/issues/166)
+
+**Closed issues:**
+
+- The Halo series punch card [\#191](https://github.com/jjjchens235/bing-rewards/issues/191)
+
+**Merged pull requests:**
+
+- Release v1.8 [\#195](https://github.com/jjjchens235/bing-rewards/pull/195) ([jjjchens235](https://github.com/jjjchens235))
+
+## [v1.7](https://github.com/jjjchens235/bing-rewards/tree/v1.7) (2022-03-19)
+
+[Full Changelog](https://github.com/jjjchens235/bing-rewards/compare/v1.6...v1.7)
 
 **Implemented enhancements:**
 
 - expose stats object at the BingRewards.py level [\#176](https://github.com/jjjchens235/bing-rewards/issues/176)
 - \[Feature request\] Please add \# of collected points to the log [\#136](https://github.com/jjjchens235/bing-rewards/issues/136)
 
+**Fixed bugs:**
+
+- Not showing 2FA code [\#173](https://github.com/jjjchens235/bing-rewards/issues/173)
+
 **Closed issues:**
 
+- UnboundLocalError: local variable 'available\_points' referenced before assignment [\#186](https://github.com/jjjchens235/bing-rewards/issues/186)
+- print\_stats\(\) not showing the correct days until bonus [\#184](https://github.com/jjjchens235/bing-rewards/issues/184)
+- TimeoutException in latest code [\#182](https://github.com/jjjchens235/bing-rewards/issues/182)
+- error: raise WebDriverException\(error\_msg\) selenium.common.exceptions.WebDriverException: Message: Message: unknown error: cannot find Chrome binary [\#180](https://github.com/jjjchens235/bing-rewards/issues/180)
 - REFACTOR: after\_click\_on is not an AbstractEventListener element. [\#174](https://github.com/jjjchens235/bing-rewards/issues/174)
 - Selenium error: Cannot construct KeyEvent from non-typeable key \[fix is in dev now\] [\#171](https://github.com/jjjchens235/bing-rewards/issues/171)
 - Add Cookie Check in every tiles [\#160](https://github.com/jjjchens235/bing-rewards/issues/160)
+
+**Merged pull requests:**
+
+- fix 2fa, update.sh, refactor driver as reward instance var [\#187](https://github.com/jjjchens235/bing-rewards/pull/187) ([jjjchens235](https://github.com/jjjchens235))
+- Add update script [\#183](https://github.com/jjjchens235/bing-rewards/pull/183) ([Greatest125](https://github.com/Greatest125))
+- Fix 2FA with the approve sign in page [\#181](https://github.com/jjjchens235/bing-rewards/pull/181) ([nootkroot](https://github.com/nootkroot))
 
 ## [v1.6](https://github.com/jjjchens235/bing-rewards/tree/v1.6) (2022-02-19)
 
@@ -93,7 +125,7 @@
 
 **Merged pull requests:**
 
-- added telegram bot notifications [\#135](https://github.com/jjjchens235/bing-rewards/pull/135) ([hosein-hub](https://github.com/hosein-hub))
+- added telegram bot notifications [\#135](https://github.com/jjjchens235/bing-rewards/pull/135) ([hoseininjast](https://github.com/hoseininjast))
 - add german market [\#133](https://github.com/jjjchens235/bing-rewards/pull/133) ([merschie](https://github.com/merschie))
 
 ## [v1.2](https://github.com/jjjchens235/bing-rewards/tree/v1.2) (2021-12-14)
@@ -114,7 +146,7 @@
 **Merged pull requests:**
 
 - Adds smaller integration for 2FA login - partially fixes \#58 [\#131](https://github.com/jjjchens235/bing-rewards/pull/131) ([revolutionisme](https://github.com/revolutionisme))
-- Update README.md [\#129](https://github.com/jjjchens235/bing-rewards/pull/129) ([hosein-hub](https://github.com/hosein-hub))
+- Update README.md [\#129](https://github.com/jjjchens235/bing-rewards/pull/129) ([hoseininjast](https://github.com/hoseininjast))
 
 ## [v1.1](https://github.com/jjjchens235/bing-rewards/tree/v1.1) (2021-11-26)
 
