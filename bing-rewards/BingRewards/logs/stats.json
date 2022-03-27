@@ -1,5 +1,6 @@
 {
     "flamener@hotmail.com": [
+<<<<<<< HEAD
         "Thu, Feb 24 2022 03:00PM: Points earned this run: 232; Microsoft 'Points earned' today: 430; Streak count: 21; 6 days until bonus gift; Available points: 5,663; Lifetime points: 5,663",
         "Fri, Feb 25 2022 02:38PM: Points earned this run: 60; Microsoft 'Points earned' today: 450; Streak count: 22; 5 days until bonus gift; Available points: 5,865; Lifetime points: 5,865",
         "Sat, Feb 26 2022 12:41PM: Points earned this run: 60; Microsoft 'Points earned' today: 440; Streak count: 23; 4 days until bonus gift; Available points: 6,057; Lifetime points: 6,057",
@@ -24,5 +25,16 @@
         "Fri, Mar 25 2022 09:29AM: Points earned this run: 202; Microsoft 'Points earned' today: 450; Streak count: 50; 4 days until bonus gift; Available points: 14,882; Lifetime points: 14,882",
         "Fri, Mar 25 2022 08:31PM: Points earned this run: 0; Microsoft 'Points earned' today: 450; Streak count: 50; 4 days until bonus gift; Available points: 14,967; Lifetime points: 14,967",
         "Sat, Mar 26 2022 02:42PM: Points earned this run: 192; Microsoft 'Points earned' today: 440; Streak count: 51; 3 days until bonus gift; Available points: 15,489; Lifetime points: 15,489"
+=======
+        "Tue, Mar 01 2022 02:12PM: Points earned this run: 329; Microsoft 'Points earned' today: 377; Streak count: 26; 18 days; Available points: 6,813; Lifetime points: 6,813",
+        "Sat, Mar 05 2022 08:59PM: Points earned this run: 70; Microsoft 'Points earned' today: 440; Streak count: 30; 4 days until bonus gift; Available points: 7,834; Lifetime points: 7,834",
+        "Sat, Mar 12 2022 11:51PM: Points earned this run: 189; Microsoft 'Points earned' today: 440; Streak count: 37; 7 days until bonus gift; Available points: 9,713; Lifetime points: 9,713",
+        "Mon, Mar 14 2022 07:43PM: Points earned this run: 232; Microsoft 'Points earned' today: 430; Streak count: 39; 5 days until bonus gift; Available points: 10,282; Lifetime points: 10,282",
+        "Tue, Mar 15 2022 01:59PM: Points earned this run: 232; Microsoft 'Points earned' today: 430; Streak count: 40; 4 days until bonus gift; Available points: 10,514; Lifetime points: 10,514",
+        "Sun, Mar 20 2022 10:38PM: Points earned this run: 0; Microsoft 'Points earned' today: 440; Streak count: 45; 9 days until bonus gift; Available points: 12,576; Lifetime points: 12,576",
+        "Mon, Mar 21 2022 02:49PM: Points earned this run: 226; Microsoft 'Points earned' today: 430; Streak count: 46; 8 days until bonus gift; Available points: 13,239; Lifetime points: 13,239",
+        "Tue, Mar 22 2022 03:03PM: Points earned this run: 226; Microsoft 'Points earned' today: 430; Streak count: 47; 7 days until bonus gift; Available points: 13,806; Lifetime points: 13,806",
+        "Thu, Mar 24 2022 03:03PM: Points earned this run: 212; Microsoft 'Points earned' today: 410; Streak count: 49; 5 days until bonus gift; Available points: 14,660; Lifetime points: 14,660"
+>>>>>>> 6bd8adc5cf50048f4add2f1d3f2ccbc6fd5add4d
     ]
 }
