@@ -3920,7 +3920,7 @@ Sat, Mar 19 2022 03:45PM
        >> Available points: 12,073
        >> Lifetime points: 12,073
 
-Sun, Mar 20 2022 03:52PM
+Wed, Mar 23 2022 09:29AM
        >> Logging in
            << Successfully logged in
 > Starting Edge search
@@ -3936,26 +3936,260 @@ Sun, Mar 20 2022 03:52PM
     < Successfully completed Web search
 
 > Starting Offers
-       >> Trying No need for meat
+       >> Trying Free guy
               >>> Checking cookies popup
               >>> No cookie popup present
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'No need for meat'
-       >> Trying Bucket list
+           << Failed to complete 'Free guy'
+       >> Trying Doubleshot quiz
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 3/3 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed 'Doubleshot quiz'
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying NHL for you
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'Bucket list'
-       >> Trying Goodness of well-being
+           << Failed to complete 'NHL for you'
+       >> Trying A walk in the woods
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'Goodness of well-being'
+           << Failed to complete 'A walk in the woods'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Take the tour'
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Starting Mobile search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Summary
+       >> Points earned this run: 232
+       >> Microsoft 'Points earned' today: 430
+       >> Streak count: 48
+           << 6 days until bonus gift
+       >> Available points: 14,038
+       >> Lifetime points: 14,038
+
+Fri, Mar 25 2022 09:29AM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Going for garlic
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Going for garlic'
+       >> Trying Think you can dance?
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Think you can dance?'
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying Time for some self-indulgence
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Time for some self-indulgence'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Take the tour'
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Starting Mobile search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Summary
+       >> Points earned this run: 202
+       >> Microsoft 'Points earned' today: 450
+       >> Streak count: 50
+           << 4 days until bonus gift
+       >> Available points: 14,882
+       >> Lifetime points: 14,882
+
+Fri, Mar 25 2022 08:31PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Going for garlic
+           << Already completed, or no points offered
+       >> Trying Think you can dance?
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Time for some self-indulgence
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Take the tour'
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Starting Mobile search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Summary
+       >> Points earned this run: 0
+       >> Microsoft 'Points earned' today: 450
+       >> Streak count: 50
+           << 4 days until bonus gift
+       >> Available points: 14,967
+       >> Lifetime points: 14,967
+
+Sat, Mar 26 2022 02:42PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Trails, cliffs, and a view
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Trails, cliffs, and a view'
+       >> Trying Friends superfan?
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'Friends superfan?'
+       >> Trying Keep your heart healthy
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Keep your heart healthy'
        >> Trying Give with Bing
            << Already completed, or no points offered
        >> Trying Take the tour
@@ -3992,8 +4226,8 @@ Sun, Mar 20 2022 03:52PM
 > Summary
        >> Points earned this run: 192
        >> Microsoft 'Points earned' today: 440
-       >> Streak count: 45
-           << 9 days until bonus gift
-       >> Available points: 12,576
-       >> Lifetime points: 12,576
+       >> Streak count: 51
+           << 3 days until bonus gift
+       >> Available points: 15,489
+       >> Lifetime points: 15,489
 
