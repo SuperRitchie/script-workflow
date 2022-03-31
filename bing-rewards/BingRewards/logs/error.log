@@ -4231,3 +4231,298 @@ Sat, Mar 26 2022 02:42PM
        >> Available points: 15,489
        >> Lifetime points: 15,489
 
+Sun, Mar 27 2022 01:56PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Europe of Canada
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Europe of Canada'
+       >> Trying Get the recipe
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Get the recipe'
+       >> Trying LoL fan?
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'LoL fan?'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Take the tour'
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Starting Mobile search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Summary
+       >> Points earned this run: 182
+       >> Microsoft 'Points earned' today: 440
+       >> Streak count: 52
+           << 2 days until bonus gift
+       >> Available points: 15,991
+       >> Lifetime points: 15,991
+
+Mon, Mar 28 2022 12:57PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Voyages extraordinaries
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Voyages extraordinaries'
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 3/3 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed 'Bonus quiz'
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying Mindful Monday
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'Mindful Monday'
+       >> Trying Let the fun begin!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Let the fun begin!'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Take the tour'
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Starting Mobile search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Summary
+       >> Points earned this run: 232
+       >> Microsoft 'Points earned' today: 430
+       >> Streak count: 53
+           << 1 day until bonus gift
+       >> Available points: 16,588
+       >> Lifetime points: 16,588
+
+Wed, Mar 30 2022 10:15AM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying My heart will go on
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'My heart will go on'
+       >> Trying Doubleshot quiz
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 3/3 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed 'Doubleshot quiz'
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying Shopping capital
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Shopping capital'
+       >> Trying Planning to buy a house?
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Planning to buy a house?'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Take the tour'
+       >> Trying Last chance
+           << Already completed, or no points offered
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Women's History Month" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Starting Mobile search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Summary
+       >> Points earned this run: 222
+       >> Microsoft 'Points earned' today: 420
+       >> Streak count: 55
+           << 9 days until bonus gift
+       >> Available points: 17,522
+       >> Lifetime points: 17,522
+
+Thu, Mar 31 2022 11:20AM
+Traceback (most recent call last):
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 87, in main
+    complete_search(rewards, completion, args.search_type, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 46, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1365, in complete_search_type
+    self.__get_driver(device_type)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1255, in __get_driver
+    self.__login()
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 171, in __login
+    is_login_complete = self.__check_login_url(self.driver.current_url)
+  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 107, in __check_login_url
+    WebDriverWait(self.driver, 30).until(
+  File "C:\Users\flame\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00897AC3+2587331]
+	Ordinal0 [0x0082ADD1+2141649]
+	Ordinal0 [0x00723BB8+1063864]
+	Ordinal0 [0x007501CE+1245646]
+	Ordinal0 [0x007503CB+1246155]
+	Ordinal0 [0x0077A612+1418770]
+	Ordinal0 [0x007686D4+1345236]
+	Ordinal0 [0x00778A0A+1411594]
+	Ordinal0 [0x007684A6+1344678]
+	Ordinal0 [0x007453F6+1201142]
+	Ordinal0 [0x007462E6+1204966]
+	GetHandleVerifier [0x00A3DF22+1680738]
+	GetHandleVerifier [0x00AF0DBC+2413564]
+	GetHandleVerifier [0x0092D151+563089]
+	GetHandleVerifier [0x0092BF13+558419]
+	Ordinal0 [0x0083081E+2164766]
+	Ordinal0 [0x00835508+2184456]
+	Ordinal0 [0x00835650+2184784]
+	Ordinal0 [0x0083F5BC+2225596]
+	BaseThreadInitThunk [0x76BC6739+25]
+	RtlGetFullPathName_UEx [0x77E18E7F+1215]
+	RtlGetFullPathName_UEx [0x77E18E4D+1165]
+
+
+Starting new HTTPS connection (1): api.telegram.org:443
+https://api.telegram.org:443 "GET /bot5250007005:AAHRHh8F6oqzhRSfn4fNRKCun5YHLB0FDX8/sendMessage?chat_id=5230930202&text=Traceback%20(most%20recent%20call%20last):%0A%20%20File%20%22C:%5CUsers%5Cflame%5Cbing-rewards%5CBingRewards%5CBingRewards.py%22,%20line%2087,%20in%20main%0A%20%20%20%20complete_search(rewards,%20completion,%20args.search_type,%20search_hist)%0A%20%20File%20%22C:%5CUsers%5Cflame%5Cbing-rewards%5CBingRewards%5CBingRewards.py%22,%20line%2046,%20in%20complete_search%0A%20%20%20%20rewards.complete_search_type(search_type,%20completion,%20search_hist)%0A%20%20File%20%22C:%5CUsers%5Cflame%5Cbing-rewards%5CBingRewards%5Csrc%5Crewards.py%22,%20line%201365,%20in%20complete_search_type%0A%20%20%20%20self.__get_driver(device_type)%0A%20%20File%20%22C:%5CUsers%5Cflame%5Cbing-rewards%5CBingRewards%5Csrc%5Crewards.py%22,%20line%201255,%20in%20__get_driver%0A%20%20%20%20self.__login()%0A%20%20File%20%22C:%5CUsers%5Cflame%5Cbing-rewards%5CBingRewards%5Csrc%5Crewards.py%22,%20line%20171,%20in%20__login%0A%20%20%20%20is_login_complete%20=%20self.__check_login_url(self.driver.current_url)%0A%20%20File%20%22C:%5CUsers%5Cflame%5Cbing-rewards%5CBingRewards%5Csrc%5Crewards.py%22,%20line%20107,%20in%20__check_login_url%0A%20%20%20%20WebDriverWait(self.driver,%2030).until(%0A%20%20File%20%22C:%5CUsers%5Cflame%5CAppData%5CLocal%5CPrograms%5CPython%5CPython310%5Clib%5Csite-packages%5Cselenium%5Cwebdriver%5Csupport%5Cwait.py%22,%20line%2089,%20in%20until%0A%20%20%20%20raise%20TimeoutException(message,%20screen,%20stacktrace)%0Aselenium.common.exceptions.TimeoutException:%20Message:%20%0AStacktrace:%0ABacktrace:%0A%09Ordinal0%20%5B0x00897AC3+2587331%5D%0A%09Ordinal0%20%5B0x0082ADD1+2141649%5D%0A%09Ordinal0%20%5B0x00723BB8+1063864%5D%0A%09Ordinal0%20%5B0x007501CE+1245646%5D%0A%09Ordinal0%20%5B0x007503CB+1246155%5D%0A%09Ordinal0%20%5B0x0077A612+1418770%5D%0A%09Ordinal0%20%5B0x007686D4+1345236%5D%0A%09Ordinal0%20%5B0x00778A0A+1411594%5D%0A%09Ordinal0%20%5B0x007684A6+1344678%5D%0A%09Ordinal0%20%5B0x007453F6+1201142%5D%0A%09Ordinal0%20%5B0x007462E6+1204966%5D%0A%09GetHandleVerifier%20%5B0x00A3DF22+1680738%5D%0A%09GetHandleVerifier%20%5B0x00AF0DBC+2413564%5D%0A%09GetHandleVerifier%20%5B0x0092D151+563089%5D%0A%09GetHandleVerifier%20%5B0x0092BF13+558419%5D%0A%09Ordinal0%20%5B0x0083081E+2164766%5D%0A%09Ordinal0%20%5B0x00835508+2184456%5D%0A%09Ordinal0%20%5B0x00835650+2184784%5D%0A%09Ordinal0%20%5B0x0083F5BC+2225596%5D%0A%09BaseThreadInitThunk%20%5B0x76BC6739+25%5D%0A%09RtlGetFullPathName_UEx%20%5B0x77E18E7F+1215%5D%0A%09RtlGetFullPathName_UEx%20%5B0x77E18E4D+1165%5D%0A%0A HTTP/1.1" 200 2527
