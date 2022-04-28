@@ -1047,3 +1047,282 @@ Sun, Apr 03 2022 04:04PM
        >> Available points: 19,704
        >> Lifetime points: 19,704
 
+Tue, Apr 12 2022 04:17PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Soccer fever
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+       >> Trying Space mission
+           << Already completed, or no points offered
+       >> Trying Ideas for your basement
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Take the tour'
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Are you a sports fanatic?" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Starting Mobile search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Summary
+       >> Points earned this run: 0
+       >> Microsoft 'Points earned' today: 430
+       >> Streak count: 68
+           << 6 days until bonus gift
+       >> Available points: 24,019
+       >> Lifetime points: 24,019
+
+Wed, Apr 20 2022 12:42PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying 20 years of the reign
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete '20 years of the reign'
+       >> Trying Doubleshot quiz
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 3/3 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed 'Doubleshot quiz'
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying Curious case of pigs
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Curious case of pigs'
+       >> Trying All around the world
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'All around the world'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Take the tour'
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Are you a sports fanatic?" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Starting Mobile search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Summary
+       >> Points earned this run: 232
+       >> Microsoft 'Points earned' today: 430
+       >> Streak count: 76
+           << 8 days until bonus gift
+       >> Available points: 27,853
+       >> Lifetime points: 27,853
+
+Sun, Apr 24 2022 01:04PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Web search
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Life finds a way
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Life finds a way'
+       >> Trying River facts, trivia, and more
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'River facts, trivia, and more'
+       >> Trying Let's go bananas
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Let's go bananas'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Welcome to Microsoft Rewards!
+           << Already completed, or no points offered
+       >> Trying Take the tour
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Take the tour'
+       >> Trying Set a goal
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Are you a sports fanatic?" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Starting Mobile search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Summary
+       >> Points earned this run: 182
+       >> Microsoft 'Points earned' today: 440
+       >> Streak count: 80
+           << 4 days until bonus gift
+       >> Available points: 30,001
+       >> Lifetime points: 30,001
+
+Thu, Apr 28 2022 02:16AM
+Traceback (most recent call last):
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\BingRewards.py", line 87, in main
+    complete_search(rewards, completion, args.search_type, search_hist)
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\BingRewards.py", line 46, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 1365, in complete_search_type
+    self.__get_driver(device_type)
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 1255, in __get_driver
+    self.__login()
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 171, in __login
+    is_login_complete = self.__check_login_url(self.driver.current_url)
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 107, in __check_login_url
+    WebDriverWait(self.driver, 30).until(
+  File "C:\Users\Ritchie\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 89, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002E7413+2389011]
+	Ordinal0 [0x00279F61+1941345]
+	Ordinal0 [0x0016C658+837208]
+	Ordinal0 [0x001991DD+1020381]
+	Ordinal0 [0x0019949B+1021083]
+	Ordinal0 [0x001C6032+1204274]
+	Ordinal0 [0x001B4194+1130900]
+	Ordinal0 [0x001C4302+1196802]
+	Ordinal0 [0x001B3F66+1130342]
+	Ordinal0 [0x0018E546+976198]
+	Ordinal0 [0x0018F456+980054]
+	GetHandleVerifier [0x00499632+1727522]
+	GetHandleVerifier [0x0054BA4D+2457661]
+	GetHandleVerifier [0x0037EB81+569713]
+	GetHandleVerifier [0x0037DD76+566118]
+	Ordinal0 [0x00280B2B+1968939]
+	Ordinal0 [0x00285988+1989000]
+	Ordinal0 [0x00285A75+1989237]
+	Ordinal0 [0x0028ECB1+2026673]
+	BaseThreadInitThunk [0x75EF6739+25]
+	RtlGetFullPathName_UEx [0x77518FEF+1215]
+	RtlGetFullPathName_UEx [0x77518FBD+1165]
+	(No symbol) [0x00000000]
+
+
+Starting new HTTPS connection (1): api.telegram.org:443
+https://api.telegram.org:443 "GET /bot5250007005:AAHRHh8F6oqzhRSfn4fNRKCun5YHLB0FDX8/sendMessage?chat_id=5230930202&text=Traceback%20(most%20recent%20call%20last):%0A%20%20File%20%22C:%5CUsers%5CRitchie%5Cbing-rewards%5CBingRewards%5CBingRewards.py%22,%20line%2087,%20in%20main%0A%20%20%20%20complete_search(rewards,%20completion,%20args.search_type,%20search_hist)%0A%20%20File%20%22C:%5CUsers%5CRitchie%5Cbing-rewards%5CBingRewards%5CBingRewards.py%22,%20line%2046,%20in%20complete_search%0A%20%20%20%20rewards.complete_search_type(search_type,%20completion,%20search_hist)%0A%20%20File%20%22C:%5CUsers%5CRitchie%5Cbing-rewards%5CBingRewards%5Csrc%5Crewards.py%22,%20line%201365,%20in%20complete_search_type%0A%20%20%20%20self.__get_driver(device_type)%0A%20%20File%20%22C:%5CUsers%5CRitchie%5Cbing-rewards%5CBingRewards%5Csrc%5Crewards.py%22,%20line%201255,%20in%20__get_driver%0A%20%20%20%20self.__login()%0A%20%20File%20%22C:%5CUsers%5CRitchie%5Cbing-rewards%5CBingRewards%5Csrc%5Crewards.py%22,%20line%20171,%20in%20__login%0A%20%20%20%20is_login_complete%20=%20self.__check_login_url(self.driver.current_url)%0A%20%20File%20%22C:%5CUsers%5CRitchie%5Cbing-rewards%5CBingRewards%5Csrc%5Crewards.py%22,%20line%20107,%20in%20__check_login_url%0A%20%20%20%20WebDriverWait(self.driver,%2030).until(%0A%20%20File%20%22C:%5CUsers%5CRitchie%5CAppData%5CLocal%5CPrograms%5CPython%5CPython310%5Clib%5Csite-packages%5Cselenium%5Cwebdriver%5Csupport%5Cwait.py%22,%20line%2089,%20in%20until%0A%20%20%20%20raise%20TimeoutException(message,%20screen,%20stacktrace)%0Aselenium.common.exceptions.TimeoutException:%20Message:%20%0AStacktrace:%0ABacktrace:%0A%09Ordinal0%20%5B0x002E7413+2389011%5D%0A%09Ordinal0%20%5B0x00279F61+1941345%5D%0A%09Ordinal0%20%5B0x0016C658+837208%5D%0A%09Ordinal0%20%5B0x001991DD+1020381%5D%0A%09Ordinal0%20%5B0x0019949B+1021083%5D%0A%09Ordinal0%20%5B0x001C6032+1204274%5D%0A%09Ordinal0%20%5B0x001B4194+1130900%5D%0A%09Ordinal0%20%5B0x001C4302+1196802%5D%0A%09Ordinal0%20%5B0x001B3F66+1130342%5D%0A%09Ordinal0%20%5B0x0018E546+976198%5D%0A%09Ordinal0%20%5B0x0018F456+980054%5D%0A%09GetHandleVerifier%20%5B0x00499632+1727522%5D%0A%09GetHandleVerifier%20%5B0x0054BA4D+2457661%5D%0A%09GetHandleVerifier%20%5B0x0037EB81+569713%5D%0A%09GetHandleVerifier%20%5B0x0037DD76+566118%5D%0A%09Ordinal0%20%5B0x00280B2B+1968939%5D%0A%09Ordinal0%20%5B0x00285988+1989000%5D%0A%09Ordinal0%20%5B0x00285A75+1989237%5D%0A%09Ordinal0%20%5B0x0028ECB1+2026673%5D%0A%09BaseThreadInitThunk%20%5B0x75EF6739+25%5D%0A%09RtlGetFullPathName_UEx%20%5B0x77518FEF+1215%5D%0A%09RtlGetFullPathName_UEx%20%5B0x77518FBD+1165%5D%0A%09(No%20symbol)%20%5B0x00000000%5D%0A%0A HTTP/1.1" 200 2566
