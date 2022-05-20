@@ -67,8 +67,8 @@ def main():
         password = args.password
         args.cookies = False
     else:
-        email = __decode(config.credentials['email'])
-        password = __decode(config.credentials['password'])
+        email = config.credentials['email']
+        password = config.credentials['password']
 
     if not os.path.exists(LOG_DIR):
         os.makedirs(LOG_DIR)
