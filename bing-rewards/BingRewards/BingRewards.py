@@ -31,8 +31,8 @@ def __decode(encoded):
 
 
 def get_telegram_messenger(config, args):
-    telegram_api_token = __decode(config.credentials.get('telegram_api_token'))
-    telegram_userid = __decode(config.credentials.get('telegram_userid'))
+    telegram_api_token = config.credentials.get('telegram_api_token')
+    telegram_userid = config.credentials.get('telegram_userid')
     if not args.telegram or not telegram_api_token or not telegram_userid:
         telegram_messenger = None
     else:
