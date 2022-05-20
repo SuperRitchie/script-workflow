@@ -10,66 +10,64 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: List all ORIGINAL files
-        run: ls
-
       - name: Install Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
 
       - name: Run Python Script
+        env:
+          MICROSOFT_EMAIL: ${{ secrets.MICROSOFTEMAIL }}
+          MICROSOFT_PASSWORD: ${{ secrets.MICROSOFTPASSWORD }}
+          TELEGRAM_API: ${{ secrets.TELEGRAMAPI }}
+          TELEGRAM_USERID: ${{ secrets.TELEGRAMUSERID }}
+
         run: |
           cd bing-rewards
           cd BingRewards
           pip install -r requirements.txt
           python BingRewards.py
-
-      - name: List all NEW files
-        run: ls
 
   Run-On-Ubuntu:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
-      - name: List all ORIGINAL files
-        run: ls
-
       - name: Install Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
 
       - name: Run Python Script
+        env:
+          MICROSOFT_EMAIL: ${{ secrets.MICROSOFTEMAIL }}
+          MICROSOFT_PASSWORD: ${{ secrets.MICROSOFTPASSWORD }}
+          TELEGRAM_API: ${{ secrets.TELEGRAMAPI }}
+          TELEGRAM_USERID: ${{ secrets.TELEGRAMUSERID }}
         run: |
           cd bing-rewards
           cd BingRewards
           pip install -r requirements.txt
           python BingRewards.py
 
-      - name: List all NEW files
-        run: ls
-  
   Run-On-MacOS:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
 
-      - name: List all ORIGINAL files
-        run: ls
-
       - name: Install Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
 
       - name: Run Python Script
+        env:
+          MICROSOFT_EMAIL: ${{ secrets.MICROSOFTEMAIL }}
+          MICROSOFT_PASSWORD: ${{ secrets.MICROSOFTPASSWORD }}
+          TELEGRAM_API: ${{ secrets.TELEGRAMAPI }}
+          TELEGRAM_USERID: ${{ secrets.TELEGRAMUSERID }}
         run: |
           cd bing-rewards
           cd BingRewards
           pip install -r requirements.txt
           python BingRewards.py
-
-      - name: List all NEW files
-        run: ls
