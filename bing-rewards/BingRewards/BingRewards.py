@@ -22,6 +22,7 @@ STATS_LOG = "stats.json"
 CONFIG_FILE_PATH = "config/config.json"
 DEBUG = True
 
+#comment test
 
 def _log_hist_log(hist_log):
     logging.basicConfig(
