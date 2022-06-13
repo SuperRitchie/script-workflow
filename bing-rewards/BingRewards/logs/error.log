@@ -1,0 +1,157 @@
+Tue, May 24 2022 06:16PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Straight from ancient Egypt
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Straight from ancient Egypt'
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying "Three-point shot... it's in!"
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete '"Three-point shot... it's in!"'
+       >> Trying The world around us
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'The world around us'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Xbox & Bethesda Games Showcase
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "On top of the world" is already completed.
+       >> Overall punch card progress: 5 of 5 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 189
+       >> Microsoft 'Points earned' today: 416
+       >> Streak count: 110
+           << 4 days until bonus gift
+       >> Available points: 42,831
+       >> Lifetime points: 42,831
+
+Mon, Jun 06 2022 11:02AM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Celebrate Father's Week!
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Celebrate Father's Week!'
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 3/3 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed 'Bonus quiz'
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying Put your science smarts on
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 6/6 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'Put your science smarts on'
+       >> Trying It's summer thyme
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'It's summer thyme'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Xbox & Bethesda Games Showcase
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Protecting our planet" is already completed.
+       >> Punch card "Stranger Things Season 4" is already completed.
+       >> Overall punch card progress: 5 of 5 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 222
+       >> Microsoft 'Points earned' today: 490
+       >> Streak count: 6
+           << 2 days until bonus gift
+       >> Available points: 48,738
+       >> Lifetime points: 48,738
+

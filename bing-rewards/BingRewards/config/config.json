@@ -2,5 +2,5 @@
     "email": "email",
     "password": "password",
     "telegram_api_token": "api",
-    "telegram_userid": "telegram"
+    "telegram_userid": "userid"
 }
