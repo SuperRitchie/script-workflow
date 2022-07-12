@@ -1,6 +1,7 @@
 {
-    "email": "email",
-    "password": "password",
-    "telegram_api_token": "api",
-    "telegram_userid": "userid"
+    "discord_webhook_url": "sample",
+    "email": "sample",
+    "password": "sample",
+    "telegram_api_token": "sample",
+    "telegram_userid": "sample"
 }

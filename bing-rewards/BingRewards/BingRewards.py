@@ -6,7 +6,7 @@ import json
 from options import parse_search_args
 from src.rewards import Rewards
 from src.log import HistLog, StatsJsonLog
-from src.messengers import TelegramMessenger, DiscordMessenger
+from src.messengers import TelegramMessenger, DiscordMessenger, BaseMessenger
 from src.google_sheets_reporting import GoogleSheetsReporting
 
 LOG_DIR = "logs"
@@ -46,7 +46,8 @@ def get_config():
             print("There was an error decoding the 'config.json' file")
             raise
     else:
-        raise ImportError("'config.json' file does not exist. Please run `python setup.py`.\nIf you are a previous user, existing credentials will be automatically ported over.")
+        raise ImportError(
+            "'config.json' file does not exist. Please run `python setup.py`.\nIf you are a previous user, existing credentials will be automatically ported over.")
     return config
 
 
@@ -59,12 +60,13 @@ def get_telegram_messenger(config, args):
         if args.telegram:
             print('You have selected Telegram, but config file is missing `api token` or `userid`. Please re-run setup.py with additional arguments if you want Telegram notifications.')
     else:
-        telegram_messenger = TelegramMessenger(telegram_api_token, telegram_userid)
+        telegram_messenger = TelegramMessenger(
+            telegram_api_token, telegram_userid)
     return telegram_messenger
 
 
 def get_discord_messenger(config, args):
-    discord_webhook_url = (config.get('discord_webhook_url'))
+    discord_webhook_url = __decode(config.get('discord_webhook_url'))
     discord_messenger = None
 
     if not args.discord or not discord_webhook_url:
@@ -76,8 +78,8 @@ def get_discord_messenger(config, args):
 
 
 def get_google_sheets_reporting(config, args):
-    sheet_id = (config.get('google_sheets_sheet_id'))
-    tab_name = (config.get('google_sheets_tab_name'))
+    sheet_id = __decode(config.get('google_sheets_sheet_id'))
+    tab_name = __decode(config.get('google_sheets_tab_name'))
 
     if args.google_sheets and sheet_id and tab_name:
         google_sheets_reporting = GoogleSheetsReporting(sheet_id, tab_name)
@@ -114,12 +116,13 @@ def main():
         email = emailCr
         password = passwordCr
 
+
     if not os.path.exists(LOG_DIR):
         os.makedirs(LOG_DIR)
 
     stats_log = StatsJsonLog(os.path.join(LOG_DIR, STATS_LOG), email)
     hist_log = HistLog(email,
-        os.path.join(LOG_DIR, RUN_LOG), os.path.join(LOG_DIR, SEARCH_LOG))
+                       os.path.join(LOG_DIR, RUN_LOG), os.path.join(LOG_DIR, SEARCH_LOG))
 
     completion = hist_log.get_completion()
     search_hist = hist_log.get_search_hist()
@@ -127,8 +130,11 @@ def main():
     # telegram credentials
     telegram_messenger = get_telegram_messenger(config, args)
     discord_messenger = get_discord_messenger(config, args)
+    messengers: list[BaseMessenger] = [messenger for messenger in [
+        telegram_messenger, discord_messenger] if messenger is not None]
     google_sheets_reporting = get_google_sheets_reporting(config, args)
-    rewards = Rewards(email, password, DEBUG, args.headless, args.cookies, args.driver, args.nosandbox, args.google_trends_geo)
+    rewards = Rewards(email, password, DEBUG, args.headless, args.cookies,
+                      args.driver, args.nosandbox, args.google_trends_geo, messengers)
 
     try:
         complete_search(rewards, completion, args.search_type, search_hist)
@@ -140,11 +146,10 @@ def main():
             stats_log.add_entry_and_write(formatted_stat_str, email)
 
             run_hist_str = hist_log.get_run_hist()[-1].split(': ')[1]
-            if telegram_messenger:
-                telegram_messenger.send_reward_message(rewards.stats.stats_str, run_hist_str, email)
 
-            if discord_messenger:
-                discord_messenger.send_reward_message(rewards.stats.stats_str, run_hist_str, email)
+            for messenger in messengers:
+                messenger.send_reward_message(
+                    rewards.stats.stats_str, run_hist_str, email)
 
             if google_sheets_reporting:
                 google_sheets_reporting.add_row(rewards.stats, email)
@@ -164,11 +169,14 @@ def main():
     except:  # catch *all* exceptions
         _log_hist_log(hist_log)
         hist_log.write(rewards.completion)
-        if telegram_messenger:
+
+        if len(messengers):
             # send error msg to telegram
             import traceback
             error_msg = traceback.format_exc()
-            telegram_messenger.send_message(error_msg)
+
+        for messenger in messengers:
+            messenger.send_message(error_msg)
         raise
 
 
