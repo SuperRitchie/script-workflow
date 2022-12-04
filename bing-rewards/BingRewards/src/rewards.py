@@ -16,12 +16,13 @@ from datetime import datetime, timedelta, date
 import json
 import traceback
 from requests.exceptions import HTTPError
+from typing import List
 
 
 class Rewards:
     __LOGIN_URL = "https://login.live.com/"
     __BING_URL = "https://bing.com"
-    __DASHBOARD_URL = "https://rewards.microsoft.com/"
+    __DASHBOARD_URL = "https://rewards.bing.com/"
 
     __WEB_DRIVER_WAIT_LONG = 30
     __WEB_DRIVER_WAIT_SHORT = 5
@@ -31,7 +32,7 @@ class Rewards:
     cookieclearquiz = 0
     _ON_POSIX = 'posix' in sys.builtin_module_names
 
-    messengers: list[BaseMessenger]
+    messengers: List[BaseMessenger]
 
     def __init__(self, email, password, debug=True, headless=True, cookies=False, driver_factory=ChromeDriverFactory, nosandbox=False, google_trends_geo='US', messengers=None):
         self.email = email
@@ -131,6 +132,12 @@ class Rewards:
                 EC.element_to_be_clickable((By.ID, 'iNext'))
             ).click()
 
+        #'Is your security info still accurate?' page
+        elif "https://account.live.com/proofs/remind" in url:
+            WebDriverWait(self.driver, 2).until(
+                EC.element_to_be_clickable((By.ID, 'iLooksGood'))
+            ).click()
+
         #'confirm identity' or 'recover account' page
         elif "identity/confirm" in url or "/recover" in url:
             raise RuntimeError(
@@ -204,7 +211,8 @@ class Rewards:
                 # 'any_of' checks for either condition
                 EC.any_of(
                     EC.url_contains("https://rewards.microsoft.com/?redref"),
-                    EC.url_contains("https://rewards.microsoft.com/")
+                    EC.url_contains("https://rewards.microsoft.com/"),                    
+                    EC.url_contains("https://rewards.bing.com/"),                    
                 )
             )
             # need to sign in via welcome page first

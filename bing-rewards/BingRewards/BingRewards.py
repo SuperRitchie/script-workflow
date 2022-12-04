@@ -116,7 +116,6 @@ def main():
         email = emailCr
         password = passwordCr
 
-
     if not os.path.exists(LOG_DIR):
         os.makedirs(LOG_DIR)
 

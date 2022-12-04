@@ -51,8 +51,8 @@ class DriverFactory(ABC):
 
     # Microsoft Edge user agents for additional points
     # agent src: https://www.whatismybrowser.com/guides/the-latest-user-agent/edge
-    __WEB_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 Edg/103.0.1264.44"
-    __MOBILE_USER_AGENT = "Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.70 Mobile Safari/537.36 EdgA/100.0.1185.50"
+    __WEB_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33"
+    __MOBILE_USER_AGENT = "Mozilla/5.0 (Linux; Android 10; HD1913) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.5195.79 Mobile Safari/537.36 EdgA/100.0.1185.50"
 
     @property
     @staticmethod
@@ -135,7 +135,10 @@ class DriverFactory(ABC):
         shutil.rmtree(extracted_dir)
         os.chmod(driver_path, 0o755)
 
-        cls.replace_selenium_marker(driver_path)
+
+        # removing because -nhl mode no longer works with this
+        #if cls.WebDriverCls == webdriver.Chrome:
+        #    cls.replace_selenium_marker(driver_path)
 
     @classmethod
     def add_driver_options(cls, device, headless, cookies, nosandbox):
@@ -147,12 +150,14 @@ class DriverFactory(ABC):
         options.add_argument("--disable-notifications")
         options.add_argument("disable-infobars")
         options.add_argument("--disable-gpu")
+        options.add_argument('--disable-dev-shm-usage')
 
         options.add_experimental_option(
             "prefs", {
                 # geolocation permission, 0=Ask, 1=Allow, 2=Deny
                 "profile.default_content_setting_values.geolocation": 1,
-                "profile.default_content_setting_values.notifications": 2
+                "profile.default_content_setting_values.notifications": 2,
+                "profile.default_content_setting_values.images": 2
             }
         )
 
@@ -176,7 +181,7 @@ class DriverFactory(ABC):
     @classmethod
     def get_driver(cls, device, headless, cookies, nosandbox) -> Driver:
         dl_try_count = 0
-        MAX_TRIES = 3
+        MAX_TRIES = 4
         is_dl_success = False
         options = cls.add_driver_options(device, headless, cookies, nosandbox)
 
@@ -203,12 +208,14 @@ class DriverFactory(ABC):
                     print('The downloaded driver does not match browser version...\n')
                 else: # other exc besides mismatching ver
                     raise SessionNotCreatedException(error_msg)
-                cls.__download_driver(dl_try_count)
-                # driver not up to date with Chrome browser, try different version
-                dl_try_count += 1
+
                 if dl_try_count == MAX_TRIES:
                     raise SessionNotCreatedException(
                         f'Tried downloading the {dl_try_count} most recent drivers. None match your browser version. Aborting now, please update your browser.')
+
+                cls.__download_driver(dl_try_count)
+                # driver not up to date with Chrome browser, try different version
+                dl_try_count += 1
 
             # WebDriverException is Selenium generic exception
             except WebDriverException as wde:
@@ -256,7 +263,7 @@ class ChromeDriverFactory(DriverFactory):
         elif system == "Darwin":
             # M1
             if platform.processor() == 'arm':
-                url = f"https://chromedriver.storage.googleapis.com/{latest_version}/chromedriver_mac64_m1.zip"
+                url = f"https://chromedriver.storage.googleapis.com/{latest_version}/chromedriver_mac_arm64.zip"
             else:
                 url = f"https://chromedriver.storage.googleapis.com/{latest_version}/chromedriver_mac64.zip"
         elif system == "Linux":
@@ -267,7 +274,7 @@ class ChromeDriverFactory(DriverFactory):
 class MsEdgeDriverFactory(DriverFactory):
     WebDriverCls = webdriver.Edge
     WebDriverOptions = webdriver.EdgeOptions
-    VERSION_MISMATCH_STR = 'this version of msedgedriver only supports msedge version'
+    VERSION_MISMATCH_STR = 'this version of microsoft edge webdriver only supports microsoft edge version'
     driver_name = "msedgedriver.exe" if platform.system() == "Windows" else "msedgedriver"
 
     def _get_latest_driver_url(dl_try_count):

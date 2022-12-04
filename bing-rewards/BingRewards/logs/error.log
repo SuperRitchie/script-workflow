@@ -1,4 +1,4 @@
-Wed, May 25 2022 03:29PM
+Tue, May 24 2022 06:16PM
        >> Logging in
            << Successfully logged in
 > Starting Edge search
@@ -22,46 +22,42 @@ Wed, May 25 2022 03:29PM
     < Successfully completed Web search
 
 > Starting Offers
-       >> Trying Rome more, worry less
+       >> Trying Straight from ancient Egypt
               >>> Checking cookies popup
               >>> No cookie popup present
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'Rome more, worry less'
-       >> Trying Doubleshot quiz
-              >>> Starting quiz
-              >>> Multiple choice
-                    >>>> Progress: [##############################] 3/3 (100%)
-                  <<< Successfully completed quiz
-           << Successfully completed 'Doubleshot quiz'
+           << Failed to complete 'Straight from ancient Egypt'
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
        >> Trying Daily poll
               >>> Starting poll
                   <<< Successfully completed poll
            << Successfully completed 'Daily poll'
-       >> Trying Are you a sitcom fan?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 7/7 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Are you a sitcom fan?'
-       >> Trying Much needed iron
+       >> Trying "Three-point shot... it's in!"
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'Much needed iron'
+           << Failed to complete '"Three-point shot... it's in!"'
+       >> Trying The world around us
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'The world around us'
        >> Trying Give with Bing
            << Already completed, or no points offered
        >> Trying Xbox & Bethesda Games Showcase
            << Already completed, or no points offered
-       >> Trying Bonus quiz
+       >> Trying Doubleshot quiz
            << Already completed, or no points offered
        >> Trying Bonus quiz
            << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
+       >> Trying Bonus quiz
            << Already completed, or no points offered
     < Failed to complete Offers
 
@@ -71,14 +67,14 @@ Wed, May 25 2022 03:29PM
     < Successfully completed punch card
 
 > Summary
-       >> Points earned this run: 216
+       >> Points earned this run: 189
        >> Microsoft 'Points earned' today: 416
-       >> Streak count: 111
-           << 3 days until bonus gift
-       >> Available points: 43,388
-       >> Lifetime points: 43,388
+       >> Streak count: 110
+           << 4 days until bonus gift
+       >> Available points: 42,831
+       >> Lifetime points: 42,831
 
-Sat, May 28 2022 12:26PM
+Mon, Jun 06 2022 11:02AM
        >> Logging in
            << Successfully logged in
 > Starting Edge search
@@ -102,353 +98,14 @@ Sat, May 28 2022 12:26PM
     < Successfully completed Web search
 
 > Starting Offers
-       >> Trying International Hamburger Day
+       >> Trying Celebrate Father's Week!
               >>> Checking cookies popup
               >>> No cookie popup present
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'International Hamburger Day'
-       >> Trying Bloomin' good ideas
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Bloomin' good ideas'
-       >> Trying Adding the safe greens
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Adding the safe greens'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Xbox & Bethesda Games Showcase
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Successfully completed Offers
-
-> Starting punch card
-       >> Punch card "On top of the world" is already completed.
-       >> Punch card "Stranger Things Season 4" is not complete yet.
-       >> Starting activity "Activate punch card"
-> Error during punch card:
- Traceback (most recent call last):
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1279, in __complete_action
-    completion = action(**action_kwargs)
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1196, in __punchcard
-    is_complete_activity = self.get_dashboard_data()['punchCards'][punchcard_index]['childPromotions'][activity_index]['complete']
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 222, in get_dashboard_data
-    self.__open_dashboard()
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 188, in __open_dashboard
-    self.driver.get(self.__DASHBOARD_URL)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 85, in get
-    self._dispatch("navigate_to", (url, self._driver), "get", (url, ))
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 183, in _dispatch
-    raise e
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 180, in _dispatch
-    result = getattr(self._driver, d_call)(*d_args)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 442, in get
-    self.execute(Command.GET, {'url': url})
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: headless chrome=101.0.4951.67)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00A3B8F3+2406643]
-	Ordinal0 [0x009CAF31+1945393]
-	Ordinal0 [0x008BC748+837448]
-	Ordinal0 [0x008AD9A0+776608]
-	Ordinal0 [0x008AC7C5+772037]
-	Ordinal0 [0x008ACDC8+773576]
-	Ordinal0 [0x008B792F+817455]
-	Ordinal0 [0x008C256B+861547]
-	Ordinal0 [0x008C4F40+872256]
-	Ordinal0 [0x008AD096+774294]
-	Ordinal0 [0x008C23B5+861109]
-	Ordinal0 [0x009145A7+1197479]
-	Ordinal0 [0x00904096+1130646]
-	Ordinal0 [0x008DE636+976438]
-	Ordinal0 [0x008DF546+980294]
-	GetHandleVerifier [0x00CA9612+2498066]
-	GetHandleVerifier [0x00C9C920+2445600]
-	GetHandleVerifier [0x00AD4F2A+579370]
-	GetHandleVerifier [0x00AD3D36+574774]
-	Ordinal0 [0x009D1C0B+1973259]
-	Ordinal0 [0x009D6688+1992328]
-	Ordinal0 [0x009D6775+1992565]
-	Ordinal0 [0x009DF8D1+2029777]
-	BaseThreadInitThunk [0x76446739+25]
-	RtlGetFullPathName_UEx [0x77B08FEF+1215]
-	RtlGetFullPathName_UEx [0x77B08FBD+1165]
-
-
-> Error checking rewards status -
- Traceback (most recent call last):
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1222, in __print_stats
-    dashboard = self.get_dashboard_data()
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 222, in get_dashboard_data
-    self.__open_dashboard()
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 188, in __open_dashboard
-    self.driver.get(self.__DASHBOARD_URL)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 85, in get
-    self._dispatch("navigate_to", (url, self._driver), "get", (url, ))
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 183, in _dispatch
-    raise e
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 180, in _dispatch
-    result = getattr(self._driver, d_call)(*d_args)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 442, in get
-    self.execute(Command.GET, {'url': url})
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: headless chrome=101.0.4951.67)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00A3B8F3+2406643]
-	Ordinal0 [0x009CAF31+1945393]
-	Ordinal0 [0x008BC748+837448]
-	Ordinal0 [0x008AD9A0+776608]
-	Ordinal0 [0x008AC7C5+772037]
-	Ordinal0 [0x008ACDC8+773576]
-	Ordinal0 [0x008B792F+817455]
-	Ordinal0 [0x008C256B+861547]
-	Ordinal0 [0x008C4F40+872256]
-	Ordinal0 [0x008AD096+774294]
-	Ordinal0 [0x008C23B5+861109]
-	Ordinal0 [0x009145A7+1197479]
-	Ordinal0 [0x00904096+1130646]
-	Ordinal0 [0x008DE636+976438]
-	Ordinal0 [0x008DF546+980294]
-	GetHandleVerifier [0x00CA9612+2498066]
-	GetHandleVerifier [0x00C9C920+2445600]
-	GetHandleVerifier [0x00AD4F2A+579370]
-	GetHandleVerifier [0x00AD3D36+574774]
-	Ordinal0 [0x009D1C0B+1973259]
-	Ordinal0 [0x009D6688+1992328]
-	Ordinal0 [0x009D6775+1992565]
-	Ordinal0 [0x009DF8D1+2029777]
-	BaseThreadInitThunk [0x76446739+25]
-	RtlGetFullPathName_UEx [0x77B08FEF+1215]
-	RtlGetFullPathName_UEx [0x77B08FBD+1165]
-
-
-
-Sun, May 29 2022 01:52PM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Mediterranean breeze
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Mediterranean breeze'
-       >> Trying Talk of the stars
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Talk of the stars'
-       >> Trying Out for the weekend?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Out for the weekend?'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Xbox & Bethesda Games Showcase
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Successfully completed Offers
-
-> Starting punch card
-       >> Punch card "On top of the world" is already completed.
-       >> Punch card "Stranger Things Season 4" is not complete yet.
-       >> Starting activity "Get the app"
-> Error during punch card:
- Traceback (most recent call last):
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1279, in __complete_action
-    completion = action(**action_kwargs)
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1196, in __punchcard
-    is_complete_activity = self.get_dashboard_data()['punchCards'][punchcard_index]['childPromotions'][activity_index]['complete']
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 222, in get_dashboard_data
-    self.__open_dashboard()
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 188, in __open_dashboard
-    self.driver.get(self.__DASHBOARD_URL)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 85, in get
-    self._dispatch("navigate_to", (url, self._driver), "get", (url, ))
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 183, in _dispatch
-    raise e
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 180, in _dispatch
-    result = getattr(self._driver, d_call)(*d_args)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 442, in get
-    self.execute(Command.GET, {'url': url})
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: headless chrome=101.0.4951.67)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x0055B8F3+2406643]
-	Ordinal0 [0x004EAF31+1945393]
-	Ordinal0 [0x003DC748+837448]
-	Ordinal0 [0x003CD9A0+776608]
-	Ordinal0 [0x003CC7C5+772037]
-	Ordinal0 [0x003CCDC8+773576]
-	Ordinal0 [0x003D792F+817455]
-	Ordinal0 [0x003E256B+861547]
-	Ordinal0 [0x003E4F40+872256]
-	Ordinal0 [0x003CD096+774294]
-	Ordinal0 [0x003E23B5+861109]
-	Ordinal0 [0x004345A7+1197479]
-	Ordinal0 [0x00424096+1130646]
-	Ordinal0 [0x003FE636+976438]
-	Ordinal0 [0x003FF546+980294]
-	GetHandleVerifier [0x007C9612+2498066]
-	GetHandleVerifier [0x007BC920+2445600]
-	GetHandleVerifier [0x005F4F2A+579370]
-	GetHandleVerifier [0x005F3D36+574774]
-	Ordinal0 [0x004F1C0B+1973259]
-	Ordinal0 [0x004F6688+1992328]
-	Ordinal0 [0x004F6775+1992565]
-	Ordinal0 [0x004FF8D1+2029777]
-	BaseThreadInitThunk [0x760F6739+25]
-	RtlGetFullPathName_UEx [0x77A88FEF+1215]
-	RtlGetFullPathName_UEx [0x77A88FBD+1165]
-
-
-> Error checking rewards status -
- Traceback (most recent call last):
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1222, in __print_stats
-    dashboard = self.get_dashboard_data()
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 222, in get_dashboard_data
-    self.__open_dashboard()
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 188, in __open_dashboard
-    self.driver.get(self.__DASHBOARD_URL)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 85, in get
-    self._dispatch("navigate_to", (url, self._driver), "get", (url, ))
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 183, in _dispatch
-    raise e
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\support\event_firing_webdriver.py", line 180, in _dispatch
-    result = getattr(self._driver, d_call)(*d_args)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 442, in get
-    self.execute(Command.GET, {'url': url})
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: headless chrome=101.0.4951.67)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x0055B8F3+2406643]
-	Ordinal0 [0x004EAF31+1945393]
-	Ordinal0 [0x003DC748+837448]
-	Ordinal0 [0x003CD9A0+776608]
-	Ordinal0 [0x003CC7C5+772037]
-	Ordinal0 [0x003CCDC8+773576]
-	Ordinal0 [0x003D792F+817455]
-	Ordinal0 [0x003E256B+861547]
-	Ordinal0 [0x003E4F40+872256]
-	Ordinal0 [0x003CD096+774294]
-	Ordinal0 [0x003E23B5+861109]
-	Ordinal0 [0x004345A7+1197479]
-	Ordinal0 [0x00424096+1130646]
-	Ordinal0 [0x003FE636+976438]
-	Ordinal0 [0x003FF546+980294]
-	GetHandleVerifier [0x007C9612+2498066]
-	GetHandleVerifier [0x007BC920+2445600]
-	GetHandleVerifier [0x005F4F2A+579370]
-	GetHandleVerifier [0x005F3D36+574774]
-	Ordinal0 [0x004F1C0B+1973259]
-	Ordinal0 [0x004F6688+1992328]
-	Ordinal0 [0x004F6775+1992565]
-	Ordinal0 [0x004FF8D1+2029777]
-	BaseThreadInitThunk [0x760F6739+25]
-	RtlGetFullPathName_UEx [0x77A88FEF+1215]
-	RtlGetFullPathName_UEx [0x77A88FBD+1165]
-
-
-
-Mon, May 30 2022 01:04AM
-       >> Logging in
-       >> Waiting for user to approve 2FA, please select 48 in Microsoft Authenticator
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Smooth operator
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Smooth operator'
+           << Failed to complete 'Celebrate Father's Week!'
        >> Trying Bonus quiz
               >>> Starting quiz
               >>> Multiple choice
@@ -459,384 +116,28 @@ Mon, May 30 2022 01:04AM
               >>> Starting poll
                   <<< Successfully completed poll
            << Successfully completed 'Daily poll'
+       >> Trying Put your science smarts on
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 6/6 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'Put your science smarts on'
+       >> Trying It's summer thyme
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'It's summer thyme'
        >> Trying Give with Bing
            << Already completed, or no points offered
        >> Trying Xbox & Bethesda Games Showcase
            << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
        >> Trying Rewards coffee break quiz
            << Already completed, or no points offered
        >> Trying Doubleshot quiz
            << Already completed, or no points offered
        >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "On top of the world" is already completed.
-       >> Punch card "Stranger Things Season 4" is not complete yet.
-       >> Starting activity "Stranger Things x Far Cry 6"
-              >>> Latest punch card activity successfully completed!
-       >> Overall punch card progress: 3 of 5 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 212
-       >> Microsoft 'Points earned' today: 436
-       >> Streak count: 116
-           << 8 days until bonus gift
-       >> Available points: 45,388
-       >> Lifetime points: 45,388
-
-Tue, May 31 2022 07:58AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Million Dollar baby
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Million Dollar baby'
-       >> Trying Rewards coffee break quiz
-              >>> Starting quiz
-              >>> Multiple Answers
-                    >>>> Progress: [####################          ] 2/3 (66%)
-           << Failed to complete 'Rewards coffee break quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying Did you choose the right club?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Did you choose the right club?'
-       >> Trying Going for cross-country?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Going for cross-country?'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Xbox & Bethesda Games Showcase
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "On top of the world" is already completed.
-       >> Punch card "Stranger Things Season 4" is not complete yet.
-       >> Starting activity "Save on hits from the 80s"
-              >>> Latest punch card activity successfully completed!
-       >> Overall punch card progress: 4 of 5 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 222
-       >> Microsoft 'Points earned' today: 426
-       >> Streak count: 116
-           << 8 days until bonus gift
-       >> Available points: 45,725
-       >> Lifetime points: 45,725
-
-Thu, Jun 02 2022 08:19AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying It's Pride Month!
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'It's Pride Month!'
-       >> Trying Bonus quiz
-              >>> Starting quiz
-              >>> Multiple Answers
-                    >>>> Progress: [####################          ] 2/3 (66%)
-           << Failed to complete 'Bonus quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying Keeping up with the news?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Keeping up with the news?'
-       >> Trying Be a linguaphile
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Be a linguaphile'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Xbox & Bethesda Games Showcase
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is not complete yet.
-       >> Starting activity "We only have one Earth"
-              >>> Latest punch card activity successfully completed!
-       >> Punch card "Stranger Things Season 4" is already completed.
-       >> Overall punch card progress: 5 of 5 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 223
-       >> Microsoft 'Points earned' today: 338
-       >> Streak count: 2
-           << 1 day until bonus gift
-       >> Available points: 46,500
-       >> Lifetime points: 46,500
-
-Sun, Jun 05 2022 12:52PM
-Traceback (most recent call last):
-  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 130, in main
-    complete_search(rewards, completion, args.search_type, search_hist)
-  File "C:\Users\flame\bing-rewards\BingRewards\BingRewards.py", line 90, in complete_search
-    rewards.complete_search_type(search_type, completion, search_hist)
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1372, in complete_search_type
-    self.complete_remaining_searches(search_type, prev_completion)
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1354, in complete_remaining_searches
-    self.__complete_web_search()
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1308, in __complete_web_search
-    self.completion.web_search = self.__complete_action(
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 1276, in __complete_action
-    completion = action(**action_kwargs)
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 326, in __search
-    progress = self.__get_search_progress(search_type)
-  File "C:\Users\flame\bing-rewards\BingRewards\src\rewards.py", line 240, in __get_search_progress
-    self.driver.switch_to_last_tab()
-  File "C:\Users\flame\bing-rewards\BingRewards\src\driver.py", line 43, in switch_to_last_tab
-    self.switch_to_n_tab(-1)
-  File "C:\Users\flame\bing-rewards\BingRewards\src\driver.py", line 37, in switch_to_n_tab
-    self.switch_to.window(self.window_handles[n])
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 134, in window
-    self._w3c_window(window_name)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 143, in _w3c_window
-    send_handle(window_name)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\switch_to.py", line 139, in send_handle
-    self._driver.execute(Command.SWITCH_TO_WINDOW, {'handle': h})
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\flame\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
-  (Session info: headless chrome=102.0.5005.63)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x00C9B8F3+2406643]
-	Ordinal0 [0x00C2AF31+1945393]
-	Ordinal0 [0x00B1C748+837448]
-	Ordinal0 [0x00B0DA12+776722]
-	Ordinal0 [0x00B0C7C5+772037]
-	Ordinal0 [0x00B0CC9D+773277]
-	Ordinal0 [0x00B0C3E5+771045]
-	Ordinal0 [0x00B138F8+801016]
-	Ordinal0 [0x00B1384D+800845]
-	Ordinal0 [0x00B22877+862327]
-	Ordinal0 [0x00B6C0D0+1163472]
-	Ordinal0 [0x00B64243+1131075]
-	Ordinal0 [0x00B3E636+976438]
-	Ordinal0 [0x00B3F546+980294]
-	GetHandleVerifier [0x00F09612+2498066]
-	GetHandleVerifier [0x00EFC920+2445600]
-	GetHandleVerifier [0x00D34F2A+579370]
-	GetHandleVerifier [0x00D33D36+574774]
-	Ordinal0 [0x00C31C0B+1973259]
-	Ordinal0 [0x00C36688+1992328]
-	Ordinal0 [0x00C36775+1992565]
-	Ordinal0 [0x00C3F8D1+2029777]
-	BaseThreadInitThunk [0x760F6739+25]
-	RtlGetFullPathName_UEx [0x77A88FEF+1215]
-	RtlGetFullPathName_UEx [0x77A88FBD+1165]
-
-
-Sun, Jun 05 2022 01:00PM
-       >> Logging in
-           << Successfully logged in
-> Starting Web search
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Planet awareness
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Planet awareness'
-       >> Trying Union of diversity
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Union of diversity'
-       >> Trying Welcome to the Koprulu sector
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Welcome to the Koprulu sector'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Xbox & Bethesda Games Showcase
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Punch card "Stranger Things Season 4" is already completed.
-       >> Overall punch card progress: 5 of 5 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 131
-       >> Microsoft 'Points earned' today: 510
-       >> Streak count: 5
-           << 3 days until bonus gift
-       >> Available points: 48,506
-       >> Lifetime points: 48,506
-
-Wed, Jun 08 2022 12:41PM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying The power of a superfood
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'The power of a superfood'
-       >> Trying Doubleshot quiz
-              >>> Starting quiz
-              >>> Multiple choice
-                    >>>> Progress: [##############################] 3/3 (100%)
-                  <<< Successfully completed quiz
-           << Successfully completed 'Doubleshot quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying World Oceans Day
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 7/7 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'World Oceans Day'
-       >> Trying An inspiration to us all...
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'An inspiration to us all...'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
            << Already completed, or no points offered
     < Failed to complete Offers
 
@@ -849,156 +150,12 @@ Wed, Jun 08 2022 12:41PM
 > Summary
        >> Points earned this run: 222
        >> Microsoft 'Points earned' today: 490
-       >> Streak count: 8
-       >> 5 days streak bonus gift earned!
-       >> Available points: 50,158
-       >> Lifetime points: 50,158
-
-Fri, Jun 10 2022 09:43AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Temperature is rising
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Temperature is rising'
-       >> Trying Feeling flexible?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 7/7 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Feeling flexible?'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying Quick and easy meals for one
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Quick and easy meals for one'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 114
-       >> Microsoft 'Points earned' today: 445
-       >> Streak count: 9
-           << 4 days until bonus gift
-       >> Available points: 50,702
-       >> Lifetime points: 50,702
-
-Sat, Jun 11 2022 01:39PM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying In crust we trust!
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'In crust we trust!'
-       >> Trying Sports enthusiast?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 8/8 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Sports enthusiast?'
-       >> Trying Marvelous Malta
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Marvelous Malta'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 182
-       >> Microsoft 'Points earned' today: 435
-       >> Streak count: 11
+       >> Streak count: 6
            << 2 days until bonus gift
-       >> Available points: 51,304
-       >> Lifetime points: 51,304
+       >> Available points: 48,738
+       >> Lifetime points: 48,738
 
-Wed, Jun 15 2022 07:59AM
+Mon, Jun 20 2022 01:38PM
        >> Logging in
            << Successfully logged in
 > Starting Edge search
@@ -1022,488 +179,44 @@ Wed, Jun 15 2022 07:59AM
     < Successfully completed Web search
 
 > Starting Offers
-       >> Trying Gettin' tzatziki with it
+       >> Trying Venetian paradise
               >>> Checking cookies popup
               >>> No cookie popup present
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'Gettin' tzatziki with it'
-       >> Trying Doubleshot quiz
+           << Failed to complete 'Venetian paradise'
+       >> Trying Bonus quiz
               >>> Starting quiz
               >>> Multiple choice
                     >>>> Progress: [##############################] 3/3 (100%)
                   <<< Successfully completed quiz
-           << Successfully completed 'Doubleshot quiz'
+           << Successfully completed 'Bonus quiz'
        >> Trying Daily poll
               >>> Starting poll
                   <<< Successfully completed poll
            << Successfully completed 'Daily poll'
-       >> Trying Race ready
+       >> Trying Time to get in the ring
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
                     >>>> Progress: [##############################] 10/10 (100%)
                   <<< Successfully completed quiz2
-           << Successfully completed 'Race ready'
-       >> Trying Long weekend ready
+           << Successfully completed 'Time to get in the ring'
+       >> Trying Animal, plant, or what?
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'Long weekend ready'
+           << Failed to complete 'Animal, plant, or what?'
        >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 222
-       >> Microsoft 'Points earned' today: 415
-       >> Streak count: 15
-           << 5 days until bonus gift
-       >> Available points: 53,067
-       >> Lifetime points: 53,067
-
-Thu, Jun 16 2022 11:27AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Treasure trove Turkey
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Treasure trove Turkey'
-       >> Trying Bonus quiz
-              >>> Starting quiz
-              >>> Multiple Answers
-                    >>>> Progress: [####################          ] 2/3 (66%)
-           << Failed to complete 'Bonus quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying All around the world
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'All around the world'
-       >> Trying Listen to your gut
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Listen to your gut'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 222
-       >> Microsoft 'Points earned' today: 415
-       >> Streak count: 16
-           << 4 days until bonus gift
-       >> Available points: 53,369
-       >> Lifetime points: 53,369
-
-Fri, Jun 17 2022 10:43AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying High speed!
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'High speed!'
-       >> Trying Stunning skyscrapers
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 7/7 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Stunning skyscrapers'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying Is it peak time yet?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Is it peak time yet?'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
            << Already completed, or no points offered
        >> Trying Rewards coffee break quiz
            << Already completed, or no points offered
        >> Trying Doubleshot quiz
            << Already completed, or no points offered
        >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 192
-       >> Microsoft 'Points earned' today: 445
-       >> Streak count: 16
-           << 4 days until bonus gift
-       >> Available points: 53,681
-       >> Lifetime points: 53,681
-
-Sat, Jun 18 2022 12:52PM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Unique style in Nova Scotia
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Unique style in Nova Scotia'
-       >> Trying Number crunching issues?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Number crunching issues?'
-       >> Trying Where, what, and when?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Where, what, and when?'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 172
-       >> Microsoft 'Points earned' today: 435
-       >> Streak count: 18
-           << 2 days until bonus gift
-       >> Available points: 54,263
-       >> Lifetime points: 54,263
-
-Sun, Jun 19 2022 01:09PM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Celebrate your father
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Celebrate your father'
-       >> Trying Say hi to animal dads
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Say hi to animal dads'
-       >> Trying Swap that plastic
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Swap that plastic'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 162
-       >> Microsoft 'Points earned' today: 435
-       >> Streak count: 19
-           << 1 day until bonus gift
-       >> Available points: 54,775
-       >> Lifetime points: 54,775
-
-Wed, Jun 22 2022 11:04AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Mystery specialist
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Mystery specialist'
-       >> Trying Doubleshot quiz
-              >>> Starting quiz
-              >>> Multiple choice
-                    >>>> Progress: [##############################] 3/3 (100%)
-                  <<< Successfully completed quiz
-           << Successfully completed 'Doubleshot quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying More than words
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'More than words'
-       >> Trying Hello Wednesday!
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Hello Wednesday!'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 212
-       >> Microsoft 'Points earned' today: 405
-       >> Streak count: 22
-           << 5 days until bonus gift
-       >> Available points: 56,326
-       >> Lifetime points: 56,326
-
-Thu, Jun 23 2022 01:01PM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Streaming: Pride Month
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Streaming: Pride Month'
-       >> Trying Bonus quiz
-              >>> Starting quiz
-              >>> Multiple Answers
-                    >>>> Progress: [####################          ] 2/3 (66%)
-           << Failed to complete 'Bonus quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying The world around us
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'The world around us'
-       >> Trying The gemstones of the oceans
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'The gemstones of the oceans'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
            << Already completed, or no points offered
     < Failed to complete Offers
 
@@ -1515,12 +228,12 @@ Thu, Jun 23 2022 01:01PM
 > Summary
        >> Points earned this run: 202
        >> Microsoft 'Points earned' today: 405
-       >> Streak count: 23
-           << 4 days until bonus gift
-       >> Available points: 57,008
-       >> Lifetime points: 57,008
+       >> Streak count: 20
+       >> 7 days streak bonus gift earned!
+       >> Available points: 55,502
+       >> Lifetime points: 55,502
 
-Fri, Jun 24 2022 07:56AM
+Tue, Jun 21 2022 01:43PM
        >> Logging in
            << Successfully logged in
 > Starting Edge search
@@ -1544,34 +257,231 @@ Fri, Jun 24 2022 07:56AM
     < Successfully completed Web search
 
 > Starting Offers
-       >> Trying The GOAT soccer player
+       >> Trying Inhale future and exhale past
               >>> Checking cookies popup
               >>> No cookie popup present
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'The GOAT soccer player'
-       >> Trying River facts, trivia, and more
+           << Failed to complete 'Inhale future and exhale past'
+       >> Trying Rewards coffee break quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete 'Rewards coffee break quiz'
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying Arid temperatures and mirages
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
                     >>>> Progress: [##############################] 7/7 (100%)
                   <<< Successfully completed quiz2
-           << Successfully completed 'River facts, trivia, and more'
+           << Successfully completed 'Arid temperatures and mirages'
+       >> Trying Call of Duty live
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Call of Duty live'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Protecting our planet" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 212
+       >> Microsoft 'Points earned' today: 405
+       >> Streak count: 21
+           << 6 days until bonus gift
+       >> Available points: 56,094
+       >> Lifetime points: 56,094
+
+Mon, Jun 27 2022 12:54PM
+Traceback (most recent call last):
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 206, in __open_dashboard
+    WebDriverWait(self.driver, self.__WEB_DRIVER_WAIT_SHORT).until(EC.presence_of_element_located((By.XPATH, offer_xpath)))
+  File "C:\Users\Ritchie\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 87, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00996463+2188387]
+	Ordinal0 [0x0092E461+1762401]
+	Ordinal0 [0x00843D78+802168]
+	Ordinal0 [0x00871880+989312]
+	Ordinal0 [0x00871B1B+989979]
+	Ordinal0 [0x0089E912+1173778]
+	Ordinal0 [0x0088C824+1099812]
+	Ordinal0 [0x0089CC22+1166370]
+	Ordinal0 [0x0088C5F6+1099254]
+	Ordinal0 [0x00866BE0+945120]
+	Ordinal0 [0x00867AD6+948950]
+	GetHandleVerifier [0x00C371F2+2712546]
+	GetHandleVerifier [0x00C2886D+2652765]
+	GetHandleVerifier [0x00A2002A+520730]
+	GetHandleVerifier [0x00A1EE06+516086]
+	Ordinal0 [0x0093468B+1787531]
+	Ordinal0 [0x00938E88+1805960]
+	Ordinal0 [0x00938F75+1806197]
+	Ordinal0 [0x00941DF1+1842673]
+	BaseThreadInitThunk [0x76466739+25]
+	RtlGetFullPathName_UEx [0x77168FEF+1215]
+	RtlGetFullPathName_UEx [0x77168FBD+1165]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 206, in __open_dashboard
+    WebDriverWait(self.driver, self.__WEB_DRIVER_WAIT_SHORT).until(EC.presence_of_element_located((By.XPATH, offer_xpath)))
+  File "C:\Users\Ritchie\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 87, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00996463+2188387]
+	Ordinal0 [0x0092E461+1762401]
+	Ordinal0 [0x00843D78+802168]
+	Ordinal0 [0x00871880+989312]
+	Ordinal0 [0x00871B1B+989979]
+	Ordinal0 [0x0089E912+1173778]
+	Ordinal0 [0x0088C824+1099812]
+	Ordinal0 [0x0089CC22+1166370]
+	Ordinal0 [0x0088C5F6+1099254]
+	Ordinal0 [0x00866BE0+945120]
+	Ordinal0 [0x00867AD6+948950]
+	GetHandleVerifier [0x00C371F2+2712546]
+	GetHandleVerifier [0x00C2886D+2652765]
+	GetHandleVerifier [0x00A2002A+520730]
+	GetHandleVerifier [0x00A1EE06+516086]
+	Ordinal0 [0x0093468B+1787531]
+	Ordinal0 [0x00938E88+1805960]
+	Ordinal0 [0x00938F75+1806197]
+	Ordinal0 [0x00941DF1+1842673]
+	BaseThreadInitThunk [0x76466739+25]
+	RtlGetFullPathName_UEx [0x77168FEF+1215]
+	RtlGetFullPathName_UEx [0x77168FBD+1165]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\BingRewards.py", line 130, in main
+    complete_search(rewards, completion, args.search_type, search_hist)
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\BingRewards.py", line 90, in complete_search
+    rewards.complete_search_type(search_type, completion, search_hist)
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 1369, in complete_search_type
+    init_points = self.__get_available_points()
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 1267, in __get_available_points
+    return self.get_dashboard_data()['userStatus']['availablePoints']
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 223, in get_dashboard_data
+    self.__open_dashboard()
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 210, in __open_dashboard
+    self.__open_dashboard(try_count + 1)
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 210, in __open_dashboard
+    self.__open_dashboard(try_count + 1)
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 209, in __open_dashboard
+    raise(e)
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 206, in __open_dashboard
+    WebDriverWait(self.driver, self.__WEB_DRIVER_WAIT_SHORT).until(EC.presence_of_element_located((By.XPATH, offer_xpath)))
+  File "C:\Users\Ritchie\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 87, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00996463+2188387]
+	Ordinal0 [0x0092E461+1762401]
+	Ordinal0 [0x00843D78+802168]
+	Ordinal0 [0x00871880+989312]
+	Ordinal0 [0x00871B1B+989979]
+	Ordinal0 [0x0089E912+1173778]
+	Ordinal0 [0x0088C824+1099812]
+	Ordinal0 [0x0089CC22+1166370]
+	Ordinal0 [0x0088C5F6+1099254]
+	Ordinal0 [0x00866BE0+945120]
+	Ordinal0 [0x00867AD6+948950]
+	GetHandleVerifier [0x00C371F2+2712546]
+	GetHandleVerifier [0x00C2886D+2652765]
+	GetHandleVerifier [0x00A2002A+520730]
+	GetHandleVerifier [0x00A1EE06+516086]
+	Ordinal0 [0x0093468B+1787531]
+	Ordinal0 [0x00938E88+1805960]
+	Ordinal0 [0x00938F75+1806197]
+	Ordinal0 [0x00941DF1+1842673]
+	BaseThreadInitThunk [0x76466739+25]
+	RtlGetFullPathName_UEx [0x77168FEF+1215]
+	RtlGetFullPathName_UEx [0x77168FBD+1165]
+
+
+Mon, Jun 27 2022 01:00PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Expressionism and its style
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Expressionism and its style'
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple choice
+                    >>>> Progress: [##############################] 3/3 (100%)
+                  <<< Successfully completed quiz
+           << Successfully completed 'Bonus quiz'
        >> Trying Daily poll
               >>> Starting poll
                   <<< Successfully completed poll
            << Successfully completed 'Daily poll'
-       >> Trying Spend smart
+       >> Trying Word to the wise
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'Spend smart'
+           << Failed to complete 'Word to the wise'
+       >> Trying Your esports watchlist
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Your esports watchlist'
        >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
            << Already completed, or no points offered
        >> Trying Rewards coffee break quiz
            << Already completed, or no points offered
@@ -1587,154 +497,14 @@ Fri, Jun 24 2022 07:56AM
     < Successfully completed punch card
 
 > Summary
-       >> Points earned this run: 192
-       >> Microsoft 'Points earned' today: 445
-       >> Streak count: 23
-           << 4 days until bonus gift
-       >> Available points: 57,230
-       >> Lifetime points: 57,230
-
-Sat, Jun 25 2022 01:10PM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Global Beatles Day
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Global Beatles Day'
-       >> Trying Parks, trails, and more
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Parks, trails, and more'
-       >> Trying Check your kitchen saviour
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Check your kitchen saviour'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 172
-       >> Microsoft 'Points earned' today: 435
-       >> Streak count: 24
-           << 3 days until bonus gift
-       >> Available points: 57,782
-       >> Lifetime points: 57,782
-
-Sun, Jun 26 2022 12:39PM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Birthday girl Ariana
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Birthday girl Ariana'
-       >> Trying Quench your thirst
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [########                      ] 2/7 (28%)
-                  <<< Failed to complete quiz2
-           << Failed to complete 'Quench your thirst'
-       >> Trying Cardi-woooaah!
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Cardi-woooaah!'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 162
-       >> Microsoft 'Points earned' today: 435
+       >> Points earned this run: 202
+       >> Microsoft 'Points earned' today: 405
        >> Streak count: 26
            << 1 day until bonus gift
-       >> Available points: 58,314
-       >> Lifetime points: 58,314
+       >> Available points: 58,581
+       >> Lifetime points: 58,581
 
-Tue, Jun 28 2022 08:02AM
+Mon, Jul 11 2022 02:53PM
        >> Logging in
            << Successfully logged in
 > Starting Edge search
@@ -1758,168 +528,14 @@ Tue, Jun 28 2022 08:02AM
     < Successfully completed Web search
 
 > Starting Offers
-       >> Trying On Tuesday we make salmon!
+       >> Trying Melon month
               >>> Checking cookies popup
               >>> No cookie popup present
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'On Tuesday we make salmon!'
-       >> Trying Rewards coffee break quiz
-              >>> Starting quiz
-              >>> Multiple Answers
-                    >>>> Progress: [####################          ] 2/3 (66%)
-           << Failed to complete 'Rewards coffee break quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying One-love
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'One-love'
-       >> Trying Check your Vitamin D levels
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Check your Vitamin D levels'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 212
-       >> Microsoft 'Points earned' today: 415
-       >> Streak count: 27
-           << 7 days until bonus gift
-       >> Available points: 58,928
-       >> Lifetime points: 58,928
-
-Wed, Jun 29 2022 07:42AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Start in pole position!
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Start in pole position!'
-       >> Trying Doubleshot quiz
-              >>> Starting quiz
-              >>> Multiple choice
-                    >>>> Progress: [##############################] 3/3 (100%)
-                  <<< Successfully completed quiz
-           << Successfully completed 'Doubleshot quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying Tropical life
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Tropical life'
-       >> Trying Vault into the music scene
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Vault into the music scene'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 202
-       >> Microsoft 'Points earned' today: 405
-       >> Streak count: 28
-           << 6 days until bonus gift
-       >> Available points: 59,320
-       >> Lifetime points: 59,320
-
-Thu, Jun 30 2022 11:54AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Watch the legends
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Watch the legends'
+           << Failed to complete 'Melon month'
        >> Trying Bonus quiz
               >>> Starting quiz
               >>> Multiple Answers
@@ -1929,125 +545,43 @@ Thu, Jun 30 2022 11:54AM
               >>> Starting poll
                   <<< Successfully completed poll
            << Successfully completed 'Daily poll'
-       >> Trying In the news
+       >> Trying To the moon and back
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
                     >>>> Progress: [##############################] 10/10 (100%)
                   <<< Successfully completed quiz2
-           << Successfully completed 'In the news'
-       >> Trying Out for the weekend?
+           << Successfully completed 'To the moon and back'
+       >> Trying Green garden
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'Out for the weekend?'
+           << Failed to complete 'Green garden'
        >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
            << Already completed, or no points offered
        >> Trying Rewards coffee break quiz
            << Already completed, or no points offered
        >> Trying Doubleshot quiz
            << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
     < Failed to complete Offers
 
 > Starting punch card
-       >> Punch card "Protecting our planet" is already completed.
+       >> Punch card "Fancy yourself a foodie?" is already completed.
        >> Overall punch card progress: 4 of 4 completed
     < Successfully completed punch card
 
 > Summary
-       >> Points earned this run: 242
+       >> Points earned this run: 222
        >> Microsoft 'Points earned' today: 415
-       >> Streak count: 30
-           << 4 days until bonus gift
-       >> Available points: 59,662
-       >> Lifetime points: 59,662
-
-Sat, Jul 02 2022 12:20AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Spec-taco-lar recipes
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Spec-taco-lar recipes'
-       >> Trying Keeping up with the news?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Keeping up with the news?'
-       >> Trying It's summer thyme
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'It's summer thyme'
-       >> Trying Hydrating correctly?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Hydrating correctly?'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Fancy yourself a foodie?" is not complete yet.
-       >> Starting activity "Guilty pleasures"
-              >>> Starting quiz
-              >>> Multiple choice
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz
-              >>> Latest punch card activity successfully completed!
-       >> Overall punch card progress: 1 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 292
-       >> Microsoft 'Points earned' today: 392
-       >> Streak count: 31
+       >> Streak count: 41
            << 3 days until bonus gift
-       >> Available points: 60,494
-       >> Lifetime points: 60,494
+       >> Available points: 65,010
+       >> Lifetime points: 65,010
 
-Sun, Jul 03 2022 02:18PM
+Mon, Jul 18 2022 10:16AM
        >> Logging in
            << Successfully logged in
 > Starting Edge search
@@ -2071,86 +605,14 @@ Sun, Jul 03 2022 02:18PM
     < Successfully completed Web search
 
 > Starting Offers
-       >> Trying Marvellous maverick
+       >> Trying Nelson Mandela Day
               >>> Checking cookies popup
               >>> No cookie popup present
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'Marvellous maverick'
-       >> Trying Science of life
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 5/5 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Science of life'
-       >> Trying Don't miss out on the action
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Don't miss out on the action'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Fancy yourself a foodie?" is not complete yet.
-       >> Starting activity "When life gives you lemons... make lemonade!"
-              >>> Latest punch card activity successfully completed!
-       >> Overall punch card progress: 3 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 183
-       >> Microsoft 'Points earned' today: 384
-       >> Streak count: 33
-           << 1 day until bonus gift
-       >> Available points: 61,512
-       >> Lifetime points: 61,512
-
-Mon, Jul 04 2022 01:14PM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Jewels of the Caribbean
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Jewels of the Caribbean'
+           << Failed to complete 'Nelson Mandela Day'
        >> Trying Bonus quiz
               >>> Starting quiz
               >>> Multiple Answers
@@ -2158,476 +620,25 @@ Mon, Jul 04 2022 01:14PM
            << Failed to complete 'Bonus quiz'
        >> Trying Daily poll
               >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying Eleven is back!
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Eleven is back!'
-       >> Trying Snack-y dinner ideas
+                  <<< Failed to complete poll
+           << Failed to complete 'Daily poll'
+       >> Trying Movie night
               >>> Starting quiz
                   <<< Could not detect quiz overlay
               >>> Starting quiz2 (no overlay)
               >>> Could not find quiz2 progress elements
-           << Failed to complete 'Snack-y dinner ideas'
+           << Failed to complete 'Movie night'
+       >> Trying Fans recommended
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Fans recommended'
        >> Trying Give with Bing
            << Already completed, or no points offered
        >> Trying Rewards coffee break quiz
            << Already completed, or no points offered
        >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Fancy yourself a foodie?" is not complete yet.
-       >> Starting activity "Cool as a cucumber"
-              >>> Latest punch card activity successfully completed!
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 273
-       >> Microsoft 'Points earned' today: 415
-       >> Streak count: 34
-       >> 7 days streak bonus gift earned!
-       >> Available points: 62,321
-       >> Lifetime points: 62,321
-
-Wed, Jul 06 2022 08:41AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Month of the berry
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Month of the berry'
-       >> Trying Doubleshot quiz
-              >>> Starting quiz
-              >>> Multiple choice
-                    >>>> Progress: [##############################] 3/3 (100%)
-                  <<< Successfully completed quiz
-           << Successfully completed 'Doubleshot quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying Music, cinema, and more
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 8/8 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Music, cinema, and more'
-       >> Trying StarCraft II live
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'StarCraft II live'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Fancy yourself a foodie?" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 222
-       >> Microsoft 'Points earned' today: 415
-       >> Streak count: 36
-           << 8 days until bonus gift
-       >> Available points: 62,895
-       >> Lifetime points: 62,895
-
-Thu, Jul 07 2022 09:40AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying World Chocolate Day
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'World Chocolate Day'
-       >> Trying Bonus quiz
-              >>> Starting quiz
-              >>> Multiple Answers
-                    >>>> Progress: [####################          ] 2/3 (66%)
-           << Failed to complete 'Bonus quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying In the news
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 10/10 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'In the news'
-       >> Trying Avoidable laundry mistakes
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Avoidable laundry mistakes'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Fancy yourself a foodie?" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 222
-       >> Microsoft 'Points earned' today: 415
-       >> Streak count: 37
-           << 7 days until bonus gift
-       >> Available points: 63,207
-       >> Lifetime points: 63,207
-
-Fri, Jul 08 2022 08:27AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying A barnburner or not?
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'A barnburner or not?'
-       >> Trying On a break?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 7/7 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'On a break?'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying More than words
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'More than words'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Fancy yourself a foodie?" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 182
-       >> Microsoft 'Points earned' today: 435
-       >> Streak count: 37
-       >> 20 days
-       >> Available points: 63,519
-       >> Lifetime points: 63,519
-
-Sat, Jul 09 2022 02:36AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Birthday boy Hanks
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Birthday boy Hanks'
-       >> Trying Food 101
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 7/7 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Food 101'
-       >> Trying Only for your ease
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Only for your ease'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Daily poll
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Fancy yourself a foodie?" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 182
-       >> Microsoft 'Points earned' today: 445
-       >> Streak count: 38
-       >> 15 days
-       >> Available points: 63,806
-       >> Lifetime points: 63,806
-
-Sun, Jul 10 2022 01:26PM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying Extreme places
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Extreme places'
-       >> Trying Feeling flexible?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 7/7 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Feeling flexible?'
-       >> Trying Japanese landscape
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Japanese landscape'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-       >> Trying Rewards coffee break quiz
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
-           << Already completed, or no points offered
-    < Failed to complete Offers
-
-> Starting punch card
-       >> Punch card "Fancy yourself a foodie?" is already completed.
-       >> Overall punch card progress: 4 of 4 completed
-    < Successfully completed punch card
-
-> Summary
-       >> Points earned this run: 182
-       >> Microsoft 'Points earned' today: 435
-       >> Streak count: 40
-       >> 20 days
-       >> Available points: 64,408
-       >> Lifetime points: 64,408
-
-Tue, Jul 12 2022 07:56AM
-       >> Logging in
-           << Successfully logged in
-> Starting Edge search
-       >> Starting search
-             >>> Progress: [##############################] 12/12 (100%)
-           << Successfully completed search
-    < Successfully completed Edge search
-
-> Starting Mobile search
-       >> Starting search
-             >>> Progress: [##############################] 60/60 (100%)
-           << Successfully completed search
-    < Successfully completed Mobile search
-
-> Starting Web search
-       >> Logging in
-           << Successfully logged in
-       >> Starting search
-             >>> Progress: [##############################] 90/90 (100%)
-           << Successfully completed search
-    < Successfully completed Web search
-
-> Starting Offers
-       >> Trying World Malala Day
-              >>> Checking cookies popup
-              >>> No cookie popup present
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'World Malala Day'
-       >> Trying Rewards coffee break quiz
-              >>> Starting quiz
-              >>> Multiple Answers
-                    >>>> Progress: [####################          ] 2/3 (66%)
-           << Failed to complete 'Rewards coffee break quiz'
-       >> Trying Daily poll
-              >>> Starting poll
-                  <<< Successfully completed poll
-           << Successfully completed 'Daily poll'
-       >> Trying Sports enthusiast?
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-                    >>>> Progress: [##############################] 8/8 (100%)
-                  <<< Successfully completed quiz2
-           << Successfully completed 'Sports enthusiast?'
-       >> Trying Dcor your way
-              >>> Starting quiz
-                  <<< Could not detect quiz overlay
-              >>> Starting quiz2 (no overlay)
-              >>> Could not find quiz2 progress elements
-           << Failed to complete 'Dcor your way'
-       >> Trying Give with Bing
-           << Already completed, or no points offered
-       >> Trying Doubleshot quiz
-           << Already completed, or no points offered
-       >> Trying Bonus quiz
            << Already completed, or no points offered
        >> Trying Bonus quiz
            << Already completed, or no points offered
@@ -2641,8 +652,936 @@ Tue, Jul 12 2022 07:56AM
 > Summary
        >> Points earned this run: 222
        >> Microsoft 'Points earned' today: 425
-       >> Streak count: 41
-           << 3 days until bonus gift
-       >> Available points: 65,242
-       >> Lifetime points: 65,242
+       >> Streak count: 47
+       >> 13 days
+       >> Available points: 67,959
+       >> Lifetime points: 67,959
+
+Sat, Aug 06 2022 02:11PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Sports evening
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Sports evening'
+       >> Trying Authentic flaky patties
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Authentic flaky patties'
+       >> Trying Athenians victory
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 7/7 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'Athenians victory'
+       >> Trying Karaoke of the day
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Karaoke of the day'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Go on an adventure!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 192
+       >> Microsoft 'Points earned' today: 435
+       >> Streak count: 67
+       >> 30 days
+       >> Available points: 76,103
+       >> Lifetime points: 76,103
+
+Sun, Aug 07 2022 01:41AM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying We the north
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'We the north'
+       >> Trying Happy Friendship Day
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Happy Friendship Day'
+       >> Trying Back to basics
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Back to basics'
+       >> Trying Best foot forward
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Best foot forward'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Go on an adventure!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 192
+       >> Microsoft 'Points earned' today: 445
+       >> Streak count: 67
+       >> 30 days
+       >> Available points: 76,305
+       >> Lifetime points: 76,305
+
+Mon, Aug 08 2022 10:05AM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Lap of the Andes
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Lap of the Andes'
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete 'Bonus quiz'
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying Guess the band
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Guess the band'
+       >> Trying Highly intelligent beings
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Highly intelligent beings'
+       >> Trying Fit and fabulous
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Fit and fabulous'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Go on an adventure!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 232
+       >> Microsoft 'Points earned' today: 425
+       >> Streak count: 69
+       >> 36 days
+       >> Available points: 76,617
+       >> Lifetime points: 76,617
+
+Sun, Aug 14 2022 09:48PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Director's cut
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Director's cut'
+       >> Trying Legendary drivers
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'Legendary drivers'
+       >> Trying Financial Awareness Day
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Financial Awareness Day'
+       >> Trying Conscious living
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Conscious living'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Go on an adventure!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 176
+       >> Microsoft 'Points earned' today: 435
+       >> Streak count: 75
+       >> 32 days
+       >> Available points: 79,999
+       >> Lifetime points: 79,999
+
+Tue, Aug 16 2022 02:53PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Apex predators
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Apex predators'
+       >> Trying Rewards coffee break quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete 'Rewards coffee break quiz'
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying Ahead of thyme
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Ahead of thyme'
+       >> Trying Watch and learn
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Watch and learn'
+       >> Trying Where's the party tonight?
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Where's the party tonight?'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Go on an adventure!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 212
+       >> Microsoft 'Points earned' today: 415
+       >> Streak count: 77
+       >> 30 days
+       >> Available points: 81,193
+       >> Lifetime points: 81,193
+
+Thu, Aug 18 2022 01:02AM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying National Fajita Day
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'National Fajita Day'
+       >> Trying Bonus quiz
+              >>> Starting quiz
+              >>> Multiple Answers
+                    >>>> Progress: [####################          ] 2/3 (66%)
+           << Failed to complete 'Bonus quiz'
+       >> Trying Daily poll
+              >>> Starting poll
+                  <<< Successfully completed poll
+           << Successfully completed 'Daily poll'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Daily poll
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Go on an adventure!" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 212
+       >> Microsoft 'Points earned' today: 445
+       >> Streak count: 79
+       >> 30 days
+       >> Available points: 81,767
+       >> Lifetime points: 81,767
+
+Sun, Nov 06 2022 04:30PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Got World Cup fever?
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Got World Cup fever?'
+       >> Trying Keep calm and curry on
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Keep calm and curry on'
+       >> Trying Don't be surprised by weather
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Don't be surprised by weather'
+       >> Trying Go big or go Rome!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'Go big or go Rome!'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Earn More Rewards points on mobile
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Get your World Cup kicks" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Error checking rewards status -
+ Traceback (most recent call last):
+  File "C:\Users\Ritchie\bing-rewards\BingRewards\src\rewards.py", line 1251, in __print_stats
+    days_to_bonus_str = self.driver.find_elements(
+IndexError: list index out of range
+
+
+Sat, Nov 19 2022 02:01PM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying Krank' up the holiday spirit
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Krank' up the holiday spirit'
+       >> Trying Watch 'em play
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Watch 'em play'
+       >> Trying Calling all news buffs!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'Calling all news buffs!'
+       >> Trying Spice up your day
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Spice up your day'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Earn More Rewards points on mobile
+           << Already completed, or no points offered
+       >> Trying Black Friday Starts Now
+           << Already completed, or no points offered
+       >> Trying Play shopping games & win rewards!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Play shopping games & win rewards!'
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Get your World Cup kicks" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 212
+       >> Microsoft 'Points earned' today: 455
+       >> Streak count: 74
+       >> 36
+       >> Available points: 120,293
+       >> Lifetime points: 120,293
+
+Sat, Nov 19 2022 02:19PM
+       >> Logging in
+           << Successfully logged in
+> Starting Offers
+       >> Trying Krank' up the holiday spirit
+           << Already completed, or no points offered
+       >> Trying Watch 'em play
+           << Already completed, or no points offered
+       >> Trying Calling all news buffs!
+           << Already completed, or no points offered
+       >> Trying Spice up your day
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Earn More Rewards points on mobile
+           << Already completed, or no points offered
+       >> Trying Black Friday Starts Now
+           << Already completed, or no points offered
+       >> Trying Play shopping games & win rewards!
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Play shopping games & win rewards!'
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Summary
+       >> Points earned this run: 0
+       >> Microsoft 'Points earned' today: 455
+       >> Streak count: 74
+       >> 40
+       >> Available points: 120,293
+       >> Lifetime points: 120,293
+
+Sat, Nov 19 2022 02:20PM
+       >> Logging in
+           << Successfully logged in
+> Starting Offers
+       >> Trying Krank' up the holiday spirit
+           << Already completed, or no points offered
+       >> Trying Watch 'em play
+           << Already completed, or no points offered
+       >> Trying Calling all news buffs!
+           << Already completed, or no points offered
+       >> Trying Spice up your day
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Earn More Rewards points on mobile
+           << Already completed, or no points offered
+       >> Trying Black Friday Starts Now
+           << Already completed, or no points offered
+       >> Trying Play shopping games & win rewards!
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Play shopping games & win rewards!'
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Summary
+       >> Points earned this run: 0
+       >> Microsoft 'Points earned' today: 455
+       >> Streak count: 74
+       >> 40
+       >> Available points: 120,293
+       >> Lifetime points: 120,293
+
+Sat, Nov 19 2022 02:24PM
+       >> Logging in
+           << Successfully logged in
+> Starting Offers
+       >> Trying Krank' up the holiday spirit
+           << Already completed, or no points offered
+       >> Trying Watch 'em play
+           << Already completed, or no points offered
+       >> Trying Calling all news buffs!
+           << Already completed, or no points offered
+       >> Trying Spice up your day
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Earn More Rewards points on mobile
+           << Already completed, or no points offered
+       >> Trying Black Friday Starts Now
+           << Already completed, or no points offered
+       >> Trying Play shopping games & win rewards!
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Play shopping games & win rewards!'
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Summary
+       >> Points earned this run: 0
+       >> Microsoft 'Points earned' today: 455
+       >> Streak count: 74
+       >> 40
+       >> Available points: 120,293
+       >> Lifetime points: 120,293
+
+Sat, Nov 19 2022 02:34PM
+       >> Logging in
+           << Successfully logged in
+> Starting Offers
+       >> Trying Krank' up the holiday spirit
+           << Already completed, or no points offered
+       >> Trying Watch 'em play
+           << Already completed, or no points offered
+       >> Trying Calling all news buffs!
+           << Already completed, or no points offered
+       >> Trying Spice up your day
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Earn More Rewards points on mobile
+           << Already completed, or no points offered
+       >> Trying Black Friday Starts Now
+           << Already completed, or no points offered
+       >> Trying Play shopping games & win rewards!
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Play shopping games & win rewards!'
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Summary
+       >> Points earned this run: 0
+       >> Microsoft 'Points earned' today: 455
+       >> Streak count: 74
+       >> 44
+       >> Available points: 120,293
+       >> Lifetime points: 120,293
+
+Sun, Nov 20 2022 11:29AM
+       >> Logging in
+           << Successfully logged in
+> Starting Edge search
+       >> Starting search
+             >>> Progress: [##############################] 12/12 (100%)
+           << Successfully completed search
+    < Successfully completed Edge search
+
+> Starting Mobile search
+       >> Starting search
+             >>> Progress: [##############################] 60/60 (100%)
+           << Successfully completed search
+    < Successfully completed Mobile search
+
+> Starting Web search
+       >> Logging in
+           << Successfully logged in
+       >> Starting search
+             >>> Progress: [##############################] 90/90 (100%)
+           << Successfully completed search
+    < Successfully completed Web search
+
+> Starting Offers
+       >> Trying The new season is here
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'The new season is here'
+       >> Trying Black Friday is coming up
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Black Friday is coming up'
+       >> Trying Exceptional territories
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+                    >>>> Progress: [##############################] 10/10 (100%)
+                  <<< Successfully completed quiz2
+           << Successfully completed 'Exceptional territories'
+       >> Trying More than words
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'More than words'
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Earn More Rewards points on mobile
+           << Already completed, or no points offered
+       >> Trying Black Friday Starts Now
+           << Already completed, or no points offered
+       >> Trying Play shopping games & win rewards!
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Play shopping games & win rewards!'
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Starting punch card
+       >> Punch card "Get your World Cup kicks" is already completed.
+       >> Overall punch card progress: 4 of 4 completed
+    < Successfully completed punch card
+
+> Summary
+       >> Points earned this run: 202
+       >> Microsoft 'Points earned' today: 455
+       >> Streak count: 75
+       >> 38
+       >> Available points: 120,825
+       >> Lifetime points: 120,825
+
+Sun, Nov 20 2022 11:38AM
+       >> Logging in
+           << Successfully logged in
+> Starting Offers
+       >> Trying The new season is here
+           << Already completed, or no points offered
+       >> Trying Black Friday is coming up
+           << Already completed, or no points offered
+       >> Trying Exceptional territories
+           << Already completed, or no points offered
+       >> Trying More than words
+           << Already completed, or no points offered
+       >> Trying Give with Bing
+           << Already completed, or no points offered
+       >> Trying Earn More Rewards points on mobile
+           << Already completed, or no points offered
+       >> Trying Black Friday Starts Now
+           << Already completed, or no points offered
+       >> Trying Play shopping games & win rewards!
+              >>> Checking cookies popup
+              >>> No cookie popup present
+              >>> Starting quiz
+                  <<< Could not detect quiz overlay
+              >>> Starting quiz2 (no overlay)
+              >>> Could not find quiz2 progress elements
+           << Failed to complete 'Play shopping games & win rewards!'
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+       >> Trying Rewards coffee break quiz
+           << Already completed, or no points offered
+       >> Trying Doubleshot quiz
+           << Already completed, or no points offered
+       >> Trying Bonus quiz
+           << Already completed, or no points offered
+    < Failed to complete Offers
+
+> Summary
+       >> Points earned this run: 0
+       >> Microsoft 'Points earned' today: 455
+       >> Streak count: 75
+       >> 44
+       >> Available points: 120,825
+       >> Lifetime points: 120,825
 

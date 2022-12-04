@@ -300,7 +300,7 @@ def parse_search_args():
         headless=True,
         cookies=False,
         nosandbox=False,
-        telegram=True,
+        telegram=False,
         google_sheets=False
     )
 
