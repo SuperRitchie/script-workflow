@@ -3,6 +3,7 @@
   "extends": [
     "config:base"
   ],
+  "ignoreTests": true,
   "packageRules": [
     {
       "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "rollback", "bump"],
