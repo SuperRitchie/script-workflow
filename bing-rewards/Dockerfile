@@ -1,4 +1,4 @@
-FROM python:3.15.0-slim
+FROM python:3.15.1-slim
 
 
 COPY .git/ /bing-rewards/.git/
